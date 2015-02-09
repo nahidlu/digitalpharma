@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "digitalPharma", "digitalPharma\digitalPharma.csproj", "{666622CA-3265-4EE5-B761-A5B3F3B08F68}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Digital Pharmacy", "Digital Pharmacy\Digital Pharmacy.vdproj", "{DB37F5FF-71C0-4A36-BEF5-F73C549A3BD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{666622CA-3265-4EE5-B761-A5B3F3B08F68}.Debug|x86.ActiveCfg = Debug|x86
+		{666622CA-3265-4EE5-B761-A5B3F3B08F68}.Debug|x86.Build.0 = Debug|x86
+		{666622CA-3265-4EE5-B761-A5B3F3B08F68}.Release|x86.ActiveCfg = Release|x86
+		{666622CA-3265-4EE5-B761-A5B3F3B08F68}.Release|x86.Build.0 = Release|x86
+		{DB37F5FF-71C0-4A36-BEF5-F73C549A3BD2}.Debug|x86.ActiveCfg = Debug
+		{DB37F5FF-71C0-4A36-BEF5-F73C549A3BD2}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

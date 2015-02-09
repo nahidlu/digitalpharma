@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PharmacyDB" Class="EasySaleDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ruhul-pc;Initial Catalog=PharmacyDB;Persist Security Info=True;User ID=sa" SettingsObjectName="digitalPharma.Properties.Settings" SettingsPropertyName="PharmacyDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_CounterNo" Member="tbl_CounterNos">
+    <Type Name="tbl_CounterNo">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CounterNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Customer" Member="tbl_Customers">
+    <Type Name="tbl_Customer">
+      <Column Name="CustomerID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustomerName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="MobileNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DiscountCardID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_DiscountCard" Member="tbl_DiscountCards">
+    <Type Name="tbl_DiscountCard">
+      <Column Name="CardID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CardActivationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CardExpiredDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DiscountPC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DiscountAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CardStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_DrugDataTable" Member="tbl_DrugDataTables">
+    <Type Name="tbl_DrugDataTable">
+      <Column Name="ProductID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CompanyName" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="MedicineName" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DosageDescription" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="GenericAndStrength" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ProductUse" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Dar" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_EmployeeType" Member="tbl_EmployeeTypes">
+    <Type Name="tbl_EmployeeType">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Expense" Member="tbl_Expenses">
+    <Type Name="tbl_Expense">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HeadID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="GenerateBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Head" Member="tbl_Heads">
+    <Type Name="tbl_Head">
+      <Column Name="GLID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GLName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_LastMaxValueOfPID" Member="tbl_LastMaxValueOfPIDs">
+    <Type Name="tbl_LastMaxValueOfPID">
+      <Column Name="LastIdValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Ledger" Member="tbl_Ledgers">
+    <Type Name="tbl_Ledger">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TransactionID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TransactionDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AccountNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Particular" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="InAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="OutAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VoucharNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="SubGLID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ShopID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbl_LedgerHead_tbl_Ledger" Member="tbl_LedgerHead" ThisKey="AccountNo" OtherKey="AccountNo" Type="tbl_LedgerHead" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_LedgerHead" Member="tbl_LedgerHeads">
+    <Type Name="tbl_LedgerHead">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GLID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubGLID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AccountNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="tbl_LedgerHead_tbl_Ledger" Member="tbl_Ledgers" ThisKey="AccountNo" OtherKey="AccountNo" Type="tbl_Ledger" />
+      <Association Name="tbl_SubHead_tbl_LedgerHead" Member="tbl_SubHead" ThisKey="SubGLID" OtherKey="SubGLID" Type="tbl_SubHead" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_login" Member="tbl_logins">
+    <Type Name="tbl_login">
+      <Column Name="user_type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="user_id" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmployeeID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_LoginHistory" Member="tbl_LoginHistories">
+    <Type Name="tbl_LoginHistory">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StartTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EmployeeID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_LowStockWarning" Member="tbl_LowStockWarnings">
+    <Type Name="tbl_LowStockWarning">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_ProductCategory" Member="tbl_ProductCategories">
+    <Type Name="tbl_ProductCategory">
+      <Column Name="CategoryID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_ProductReturn" Member="tbl_ProductReturns">
+    <Type Name="tbl_ProductReturn">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SupplierID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProductID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ReturnQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ShopID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_PurchaseInvInfo" Member="tbl_PurchaseInvInfos">
+    <Type Name="tbl_PurchaseInvInfo">
+      <Column Name="InvoiceNo" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SupplierID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InvoiceDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ReceivedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SubTotal" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TotalVat" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Discount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CarryingCost" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="InvTotal" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="InvTotalInRupee" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CurrencyExRate" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ShopID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_RecentProductPrice" Member="tbl_RecentProductPrices">
+    <Type Name="tbl_RecentProductPrice">
+      <Column Name="ProductID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UnitCost" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SalePrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="InvoiceNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_SalesManCommission" Member="tbl_SalesManCommissions">
+    <Type Name="tbl_SalesManCommission">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmployeeID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="InvoiceNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SalesDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_SalesProductInfo" Member="tbl_SalesProductInfos">
+    <Type Name="tbl_SalesProductInfo">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SalesInvoiceNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ProductID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ProductCategoryID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SalesPrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VatAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Discount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SalesDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PurchaseInvNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_SetCommission" Member="tbl_SetCommissions">
+    <Type Name="tbl_SetCommission">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_StockDetail" Member="tbl_StockDetails">
+    <Type Name="tbl_StockDetail">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProductID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AddQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddCost" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SubQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubCost" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PurchaseInvoiceNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SalesInvoiceNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BookingID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SupplierID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ShopID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_StockSummary" Member="tbl_StockSummaries">
+    <Type Name="tbl_StockSummary">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProductID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StockQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SupplierID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ShopID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_SubHead" Member="tbl_SubHeads">
+    <Type Name="tbl_SubHead">
+      <Column Name="SubGLID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GLID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubHeadName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tbl_SubHead_tbl_LedgerHead" Member="tbl_LedgerHeads" ThisKey="SubGLID" OtherKey="SubGLID" Type="tbl_LedgerHead" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Supplier" Member="tbl_Suppliers">
+    <Type Name="tbl_Supplier">
+      <Column Name="SupplierID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SupplierName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ContactNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ContactPerson" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_TempExpenseReport" Member="tbl_TempExpenseReports">
+    <Type Name="tbl_TempExpenseReport">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AccountName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AccountNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_TempMostSellingProduct" Member="tbl_TempMostSellingProducts">
+    <Type Name="tbl_TempMostSellingProduct">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProductCategory" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ProductName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ProductID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalSaleQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_TempSalesmanCommissionReport" Member="tbl_TempSalesmanCommissionReports">
+    <Type Name="tbl_TempSalesmanCommissionReport">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SalesManName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_TempStockReport" Member="tbl_TempStockReports">
+    <Type Name="tbl_TempStockReport">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProductGroup" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ProductID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ProductName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UnitPrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SalesPrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PurchaseQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SaleQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AdvanceQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AvailableQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalPurchasePrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TotalSalePrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TotalAvailablePrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Worksheet" Member="tbl_Worksheets">
+    <Type Name="tbl_Worksheet">
+      <Column Name="ProductID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="MedicineName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DosagesDescription" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GenericNameAndStrength" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ProductUse" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DAR" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_EmployeeInfo" Member="tbl_EmployeeInfos">
+    <Type Name="tbl_EmployeeInfo">
+      <Column Name="EmployeeID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ContactNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ProfilePicture" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ShopID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbl_EmployeeInfo_tbl_EmployeeInfo" Member="tbl_EmployeeInfo2" ThisKey="EmployeeID" OtherKey="EmployeeID" Type="tbl_EmployeeInfo" Cardinality="One" />
+      <Association Name="tbl_EmployeeInfo_tbl_EmployeeInfo" Member="tbl_EmployeeInfo1" ThisKey="EmployeeID" OtherKey="EmployeeID" Type="tbl_EmployeeInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_PurchaseProductInfo" Member="tbl_PurchaseProductInfos">
+    <Type Name="tbl_PurchaseProductInfo">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SupplierID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InvoiceNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ProductCategoryID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ProductID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UnitCost" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="UnitCostInRupee" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SalesPrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VatAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Discount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ShopID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InvoiceNoHidden" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BatchNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ExpiredDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_SalesInvInfo" Member="tbl_SalesInvInfos">
+    <Type Name="tbl_SalesInvInfo">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SalesInvoiceNo" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SalesDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CounterNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CartTotal" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DiscountPercent" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Discount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Vat" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GrandTotal" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DueAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PaymentMode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CustomerID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CustomerMobileNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DiscountCardNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DiscountCardAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="AdvanceStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Profit" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SalesBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ShopID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_DiscountPercent" Member="tbl_DiscountPercents">
+    <Type Name="tbl_DiscountPercent">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PercentAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.View_SupplierAndPurchaseInvInfo" Member="View_SupplierAndPurchaseInvInfos">
+    <Type Name="View_SupplierAndPurchaseInvInfo">
+      <Column Name="InvoiceNo" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SupplierID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InvoiceDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ReceivedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SubTotal" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TotalVat" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Discount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CarryingCost" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="InvTotal" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="InvTotalInRupee" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CurrencyExRate" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ShopID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Expr1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SupplierName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ContactNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ContactPerson" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_DosagesDescription" Member="tbl_DosagesDescriptions">
+    <Type Name="tbl_DosagesDescription">
+      <Column Name="DosagesID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DosagesDescription" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Product" Member="tbl_Products">
+    <Type Name="tbl_Product">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProductID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProductName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CategoryID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BarcodeNeeded" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="SupplierID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProductUse" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DosagesID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.View_PurchaseProductAndProductAndSupplierAndCategory" Member="View_PurchaseProductAndProductAndSupplierAndCategories">
+    <Type Name="View_PurchaseProductAndProductAndSupplierAndCategory">
+      <Column Name="SN" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="SupplierID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InvoiceNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ProductCategoryID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ProductID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UnitCost" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="UnitCostInRupee" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SalesPrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VatAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Discount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ShopID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InvoiceNoHidden" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BatchNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ExpiredDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Expr1" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Expr2" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CategoryID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BarcodeNeeded" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Expr3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProductUse" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Expr4" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SupplierName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ContactNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ContactPerson" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Expr5" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DosagesID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Shop" Member="tbl_Shops">
+    <Type Name="tbl_Shop">
+      <Column Name="ShopID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ShopName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Address1" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Address2" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Slogan" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ContactNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ContactPerson" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Logo" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>
