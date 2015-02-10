@@ -10,18 +10,18 @@ using System.Windows.Forms;
 namespace digitalPharma
 {
     public partial class frmSubMenu : Form
-    { 
-        
+    {
+
         public frmSubMenu()
         {
             InitializeComponent();
-        }        
+        }
         private void frmSubMenu_Load(object sender, EventArgs e)
         {
-            
+
         }
-        
-        
+
+
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -32,7 +32,7 @@ namespace digitalPharma
         }
 
         private void btnDB_Click(object sender, EventArgs e)
-        {           
+        {
             foreach (Form form in Application.OpenForms)
             {
                 if (form.GetType() == typeof(FrmDataBase))
@@ -44,7 +44,9 @@ namespace digitalPharma
 
             Form newForm = new FrmDataBase();
             newForm.MdiParent = this.MdiParent;
-            newForm.Show();  
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width + 2, 50);
+            newForm.Show();
         }
 
         private void btnSupplier_Click(object sender, EventArgs e)
@@ -60,7 +62,9 @@ namespace digitalPharma
 
             Form newForm = new frmSupplier();
             newForm.MdiParent = this.MdiParent;
-            newForm.Show();  
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width + 10, 50);
+            newForm.Show();
         }
 
         private void btnCategory_Click(object sender, EventArgs e)
@@ -76,7 +80,9 @@ namespace digitalPharma
 
             Form newForm = new frmProductCategory();
             newForm.MdiParent = this.MdiParent;
-            newForm.Show();  
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width, 50);
+            newForm.Show();
         }
 
         private void btnPurchase_Click(object sender, EventArgs e)
@@ -92,7 +98,9 @@ namespace digitalPharma
 
             Form newForm = new frmPurchase();
             newForm.MdiParent = this.MdiParent;
-            newForm.Show();  
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width, 20);
+            newForm.Show();
         }
 
         private void btnSale_Click(object sender, EventArgs e)
@@ -108,7 +116,9 @@ namespace digitalPharma
 
             Form newForm = new frmSale();
             newForm.MdiParent = this.MdiParent;
-            newForm.Show();  
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width, 50);
+            newForm.Show();
         }
 
         private void frmSubMenu_KeyDown(object sender, KeyEventArgs e)
@@ -140,9 +150,9 @@ namespace digitalPharma
 
             Form newForm = new frmReportExpiredProductList();
             newForm.MdiParent = this.MdiParent;
-            newForm.Show();  
+            newForm.Show();
         }
-        
+
 
         /*private void btnBill_Click(object sender, EventArgs e)
         {
@@ -160,6 +170,6 @@ namespace digitalPharma
             newForm.Show();  
         }
         */
-        
+
     }
 }

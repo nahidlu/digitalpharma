@@ -202,7 +202,7 @@
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmSupplier";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Supplier";
             this.Load += new System.EventHandler(this.frmSupplier_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmSupplier_KeyDown);

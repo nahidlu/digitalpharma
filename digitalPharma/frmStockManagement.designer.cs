@@ -599,7 +599,7 @@
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmStockManagement";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Stock Management";
             this.Load += new System.EventHandler(this.frmStockManagement_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmStockManagement_KeyDown);

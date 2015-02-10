@@ -878,7 +878,7 @@
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmReportAll";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Date Wise Report";
             this.Load += new System.EventHandler(this.frmReportDateWiseReport_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmReportAll_KeyDown);

@@ -43,6 +43,8 @@ namespace digitalPharma
 
             Form newForm = new frmEmployeeManagement();
             newForm.MdiParent = this;
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width, 50);
             newForm.Show();
         }
 
@@ -59,6 +61,8 @@ namespace digitalPharma
 
             Form newForm = new frmProductCategory();
             newForm.MdiParent = this;
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width, 50);
             newForm.Show();
         }
 
@@ -75,6 +79,8 @@ namespace digitalPharma
 
             Form newForm = new frmSupplier();
             newForm.MdiParent = this;
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width, 50);
             newForm.Show();
         }
 
@@ -92,22 +98,26 @@ namespace digitalPharma
 
             Form newForm = new frmPurchase();
             newForm.MdiParent = this;
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width, 50);
             newForm.Show();
         }
 
         private void salesFormToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          /*  foreach (Form form in Application.OpenForms)
-            {
-                if (form.GetType() == typeof(frmSale))
-                {
-                    form.Activate();
-                    return;
-                }
-            }*/
+            /*  foreach (Form form in Application.OpenForms)
+              {
+                  if (form.GetType() == typeof(frmSale))
+                  {
+                      form.Activate();
+                      return;
+                  }
+              }*/
 
             Form newForm = new frmSale();
             newForm.MdiParent = this;
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width, 50);
             newForm.Show();
         }
 
@@ -124,6 +134,8 @@ namespace digitalPharma
 
             Form newForm = new frmReportAll();
             newForm.MdiParent = this;
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width, 50);
             newForm.Show();
         }
 
@@ -140,6 +152,8 @@ namespace digitalPharma
 
             Form newForm = new FrmDataBase();
             newForm.MdiParent = this;
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width, 50);
             newForm.Show();
         }
 
@@ -171,15 +185,11 @@ namespace digitalPharma
             }
             if (GlobalVariable.userType == "Admin")
             {
-                databaseBackupToolStripMenuItem.Visible = true;
-                manageAccountToolStripMenuItem.Visible = true;
-                stockManagementToolStripMenuItem.Visible = true;
+                menuStrip1.Visible = true;
             }
             else
             {
-                databaseBackupToolStripMenuItem.Visible = false;
-                manageAccountToolStripMenuItem.Visible = false;
-                stockManagementToolStripMenuItem.Visible = false;
+                menuStrip1.Visible = false;
             }
         }
         private void expenseHeadEntryToolStripMenuItem_Click(object sender, EventArgs e)
@@ -195,6 +205,8 @@ namespace digitalPharma
 
             Form newForm = new frmHeadEntry();
             newForm.MdiParent = this;
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width, 50);
             newForm.Show();
         }
 
@@ -212,6 +224,8 @@ namespace digitalPharma
 
             Form newForm = new frmIncome();
             newForm.MdiParent = this;
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width, 50);
             newForm.Show();
         }
 
@@ -229,6 +243,8 @@ namespace digitalPharma
 
             Form newForm = new frmExpense();
             newForm.MdiParent = this;
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width, 50);
             newForm.Show();
         }
 
@@ -245,6 +261,8 @@ namespace digitalPharma
 
             Form newForm = new frmStockManagement();
             newForm.MdiParent = this;
+            frmSubMenu sub = new frmSubMenu();
+            newForm.Location = new Point(sub.Width, 50);
             newForm.Show();
         }
 
@@ -292,7 +310,7 @@ namespace digitalPharma
                 {
                     e.SuppressKeyPress = true;
                 }
-                
+
             }
         }
     }

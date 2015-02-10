@@ -665,7 +665,7 @@
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmProductCategory";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Product Category";
             this.Load += new System.EventHandler(this.frmProductCategory_Load_1);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmProductCategory_KeyDown);

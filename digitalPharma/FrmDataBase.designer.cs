@@ -185,8 +185,7 @@
             // 
             // FrmDataBase
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(686, 480);
             this.Controls.Add(this.label2);
@@ -197,7 +196,7 @@
             this.Controls.Add(this.pictureBox2);
             this.KeyPreview = true;
             this.Name = "FrmDataBase";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Data Base Backup and Restore";
             this.Load += new System.EventHandler(this.FrmDataBase_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmDataBase_KeyDown);

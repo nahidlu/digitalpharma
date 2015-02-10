@@ -186,6 +186,12 @@
     <Compile Include="frmProductActivation.designer.cs">
       <DependentUpon>frmProductActivation.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchase.designer.cs">
+      <DependentUpon>frmPurchase.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReportAll.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,12 +203,6 @@
     </Compile>
     <Compile Include="frmReportExpiredProductList.Designer.cs">
       <DependentUpon>frmReportExpiredProductList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSale.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSale.designer.cs">
-      <DependentUpon>frmSale.cs</DependentUpon>
     </Compile>
     <Compile Include="CrvBarcode.cs">
       <SubType>Form</SubType>
@@ -239,11 +239,11 @@
     <Compile Include="frmProductCategory.designer.cs">
       <DependentUpon>frmProductCategory.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPurchase.cs">
+    <Compile Include="frmSale.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPurchase.designer.cs">
-      <DependentUpon>frmPurchase.cs</DependentUpon>
+    <Compile Include="frmSale.designer.cs">
+      <DependentUpon>frmSale.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSet.cs">
       <SubType>Form</SubType>
@@ -449,14 +449,14 @@
     <EmbeddedResource Include="frmProductActivation.resx">
       <DependentUpon>frmProductActivation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchase.resx">
+      <DependentUpon>frmPurchase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmReportAll.resx">
       <DependentUpon>frmReportAll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReportExpiredProductList.resx">
       <DependentUpon>frmReportExpiredProductList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSale.resx">
-      <DependentUpon>frmSale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrvBarcode.resx">
       <DependentUpon>CrvBarcode.cs</DependentUpon>
@@ -471,8 +471,8 @@
     <EmbeddedResource Include="frmProductCategory.resx">
       <DependentUpon>frmProductCategory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPurchase.resx">
-      <DependentUpon>frmPurchase.cs</DependentUpon>
+    <EmbeddedResource Include="frmSale.resx">
+      <DependentUpon>frmSale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSet.resx">
       <DependentUpon>frmSet.cs</DependentUpon>

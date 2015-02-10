@@ -389,7 +389,7 @@
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmHeadEntry";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Head Entry";
             this.Load += new System.EventHandler(this.frmSubHead_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmHeadEntry_KeyDown);

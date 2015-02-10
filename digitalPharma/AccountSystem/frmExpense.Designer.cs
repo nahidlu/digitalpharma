@@ -347,7 +347,7 @@
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "frmExpense";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Expense";
             this.Load += new System.EventHandler(this.frmIncome_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmExpense_KeyDown);
