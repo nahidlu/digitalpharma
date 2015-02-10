@@ -50,9 +50,7 @@ namespace digitalPharma
                                  p.ProductID,
                                  StockQty = p.StockQty.Value
                              }).ToList();
-                    if (q.Count() > 0)
-                    {
-                        CrStockReportSupplierWise stock = new CrStockReportSupplierWise();
+                 CrStockReportSupplierWise stock = new CrStockReportSupplierWise();
                         stock.SetDataSource(q);
                         stock.SetParameterValue("ShopName", GlobalVariable.ShopName);
                         stock.SetParameterValue("SupplierName", GlobalVariable.SupplierName);
@@ -60,12 +58,7 @@ namespace digitalPharma
                         crystalReportViewer1.ReportSource = stock;
 
                         ReportID = "";
-                        SupplierID = 0;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Report Not available For This Supplier. ");
-                    }
+                        SupplierID = 0;                   
                 }
                 catch
                 {
@@ -86,8 +79,7 @@ namespace digitalPharma
                                  p.ProductID,
                                  StockQty = p.StockQty.Value
                              }).ToList();
-                    if (q.Count() > 0)
-                    {
+                   
                         CrStockReportProductCategoryWise stock = new CrStockReportProductCategoryWise();
                         stock.SetDataSource(q);
                         stock.SetParameterValue("ShopName", GlobalVariable.ShopName);
@@ -96,11 +88,7 @@ namespace digitalPharma
 
                         ReportID = "";
                         ProductCategoryID = 0;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Report Not available For This Category. ");
-                    }
+                   
                 }
                 catch
                 {

@@ -250,9 +250,22 @@ namespace digitalPharma
         {
             if (cmbSuppler.Text != "")
             {
-                GlobalVariable.SupplierName = cmbSuppler.Text.Trim();
-                CrvStock sto = new CrvStock("SupplierWise",int.Parse(cmbSuppler.SelectedValue.ToString()),0,"");
-                sto.Show();
+                EasySaleDataContext DB = new EasySaleDataContext();
+                var q = from p in DB.tbl_StockSummaries
+                        from r in DB.tbl_Products
+                        where p.ProductID == r.ProductID && p.SupplierID == int.Parse(cmbSuppler.SelectedValue.ToString()) && p.ShopID == GlobalVariable.ShopID
+                        orderby r.ProductName ascending
+                        select p;
+                if (q.Count() > 0)
+                {
+                    GlobalVariable.SupplierName = cmbSuppler.Text.Trim();
+                    CrvStock sto = new CrvStock("SupplierWise", int.Parse(cmbSuppler.SelectedValue.ToString()), 0, "");
+                    sto.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Report Not available For This Supplier. ");
+                }
             }
             else
             {
@@ -289,9 +302,22 @@ namespace digitalPharma
         {
             if (cmbProductCategory.Text != "")
             {
-                GlobalVariable.SupplierName = cmbSuppler.Text.Trim();
-                CrvStock sto = new CrvStock("ProductCategory", 0, Int64.Parse(cmbProductCategory.SelectedValue.ToString()),cmbProductCategory.Text.Trim());
-                sto.Show();
+                EasySaleDataContext DB = new EasySaleDataContext();
+                var q = from p in DB.tbl_StockSummaries
+                        from r in DB.tbl_Products
+                        where p.ProductID == r.ProductID && p.CategoryID == int.Parse(cmbProductCategory.SelectedValue.ToString()) && p.ShopID == GlobalVariable.ShopID
+                        orderby r.ProductName ascending
+                        select p;
+                if (q.Count() > 0)
+                {
+                    GlobalVariable.SupplierName = cmbSuppler.Text.Trim();
+                    CrvStock sto = new CrvStock("ProductCategory", 0, Int64.Parse(cmbProductCategory.SelectedValue.ToString()), cmbProductCategory.Text.Trim());
+                    sto.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Report Not available For This Category. ");
+                }
             }
             else
             {
