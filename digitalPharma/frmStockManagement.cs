@@ -225,7 +225,7 @@ namespace digitalPharma
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            if (cmbProductNameStock.Text != "" && (txtSubProduct.Text != "" || txtAddProduct.Text != ""))
+            if (cmbProductNameStock.Text != "" && txtUnitSalesPrice.Text != "" && (txtSubProduct.Text != "" || txtAddProduct.Text != ""))
             {
                 int check = 0;
                 EasySaleDataContext DB = new EasySaleDataContext();
@@ -431,6 +431,11 @@ namespace digitalPharma
                 {
                     MessageBox.Show("Please Select Product Name.");
                     cmbProductNameStock.Focus();
+                }
+                else if (txtUnitSalesPrice.Text == "")
+                {
+                    MessageBox.Show("Please Purchase First and Then Try Again.");
+                    //txtUnitSalesPrice.Focus();
                 }
                 else if (txtAddProduct.Text == "" || txtSubProduct.Text == "")
                 {
