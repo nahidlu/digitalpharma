@@ -127,7 +127,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.CausesValidation = false;
-            this.ClientSize = new System.Drawing.Size(249, 545);
+            this.ClientSize = new System.Drawing.Size(254, 650);
             this.ControlBox = false;
             this.Controls.Add(this.btnExpired);
             this.Controls.Add(this.btnPurchase);
@@ -143,9 +143,7 @@
             this.Name = "frmSubMenu";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Sub Menu";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.frmSubMenu_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmSubMenu_KeyDown);
             this.ResumeLayout(false);

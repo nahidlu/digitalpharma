@@ -182,6 +182,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(848, 484);
             this.Controls.Add(this.dgSupplier);
             this.Controls.Add(this.txtContactName);
@@ -198,7 +199,7 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSave);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.Teal;
+            this.ForeColor = System.Drawing.Color.Black;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmSupplier";
