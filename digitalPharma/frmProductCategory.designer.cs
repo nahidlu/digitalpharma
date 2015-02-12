@@ -236,10 +236,11 @@
             this.cmbCategory.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbCategory.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategory.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCategory.FormattingEnabled = true;
             this.cmbCategory.Location = new System.Drawing.Point(127, 24);
             this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(312, 24);
+            this.cmbCategory.Size = new System.Drawing.Size(312, 23);
             this.cmbCategory.TabIndex = 0;
             this.cmbCategory.DropDown += new System.EventHandler(this.cmbCategory_DropDown);
             this.cmbCategory.SelectedIndexChanged += new System.EventHandler(this.cmbCategory_SelectedIndexChanged);
@@ -284,13 +285,14 @@
             this.cmbUseFor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cmbUseFor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbUseFor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUseFor.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbUseFor.FormattingEnabled = true;
             this.cmbUseFor.Items.AddRange(new object[] {
             "Human",
             "Veterinary"});
             this.cmbUseFor.Location = new System.Drawing.Point(170, 118);
             this.cmbUseFor.Name = "cmbUseFor";
-            this.cmbUseFor.Size = new System.Drawing.Size(269, 24);
+            this.cmbUseFor.Size = new System.Drawing.Size(269, 23);
             this.cmbUseFor.Sorted = true;
             this.cmbUseFor.TabIndex = 3;
             // 
@@ -308,10 +310,11 @@
             this.cmbDosageDescription.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cmbDosageDescription.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbDosageDescription.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDosageDescription.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbDosageDescription.FormattingEnabled = true;
             this.cmbDosageDescription.Location = new System.Drawing.Point(170, 88);
             this.cmbDosageDescription.Name = "cmbDosageDescription";
-            this.cmbDosageDescription.Size = new System.Drawing.Size(269, 24);
+            this.cmbDosageDescription.Size = new System.Drawing.Size(269, 23);
             this.cmbDosageDescription.Sorted = true;
             this.cmbDosageDescription.TabIndex = 2;
             // 
@@ -329,10 +332,11 @@
             this.cmbSupplierName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cmbSupplierName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbSupplierName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSupplierName.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSupplierName.FormattingEnabled = true;
             this.cmbSupplierName.Location = new System.Drawing.Point(127, 54);
             this.cmbSupplierName.Name = "cmbSupplierName";
-            this.cmbSupplierName.Size = new System.Drawing.Size(312, 24);
+            this.cmbSupplierName.Size = new System.Drawing.Size(312, 23);
             this.cmbSupplierName.Sorted = true;
             this.cmbSupplierName.TabIndex = 1;
             // 

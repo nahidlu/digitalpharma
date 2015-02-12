@@ -99,7 +99,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tabPage1.Controls.Add(this.cmbProductNameStock);
             this.tabPage1.Controls.Add(this.txtProductID);
             this.tabPage1.Controls.Add(this.label1);
@@ -114,6 +114,9 @@
             // 
             // cmbProductNameStock
             // 
+            this.cmbProductNameStock.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cmbProductNameStock.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbProductNameStock.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProductNameStock.FormattingEnabled = true;
             this.cmbProductNameStock.Location = new System.Drawing.Point(214, 40);
             this.cmbProductNameStock.Name = "cmbProductNameStock";
@@ -491,7 +494,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tabPage2.Controls.Add(this.btnClear);
             this.tabPage2.Controls.Add(this.btnSearch);
             this.tabPage2.Controls.Add(this.cmbProductName);
@@ -595,7 +598,7 @@
             this.ClientSize = new System.Drawing.Size(913, 497);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.Teal;
+            this.ForeColor = System.Drawing.Color.Black;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmStockManagement";

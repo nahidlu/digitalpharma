@@ -388,7 +388,7 @@ namespace digitalPharma
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
 
-            if (cmbCategory.Text != "" && cmbSupplierName.Text != "" && cmbDosageDescription.Text != "" && cmbUseFor.Text != "" && txtProductName.Text != "" && (checkBox1.Checked == true && txtProductID.Text != "") || (cmbCategory.Text != "" && txtProductName.Text != "" && checkBox1.Checked == false))
+            if (cmbCategory.Text != "" && cmbSupplierName.Text != "" && cmbDosageDescription.Text != "" && cmbUseFor.Text != "" && txtProductName.Text != "" && ((checkBox1.Checked == true && txtProductID.Text != "") || (checkBox1.Checked == false)))
             {
                 if (btnAddProduct.Text == "Add")
                 {

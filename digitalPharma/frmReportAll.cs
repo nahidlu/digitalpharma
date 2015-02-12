@@ -141,6 +141,15 @@ namespace digitalPharma
                 gbExpense.Visible = false;
                 gbIncome.Visible = false;
                 gbProfit.Visible = false;
+                gbSale.Visible = false;
+                gbSaleDate.Visible = false;
+                gbPurchsaseDate.Visible = false;
+                gbPurchase.Visible = false;
+                gbReturn.Visible = false;
+                gbSupplierwise.Visible = false;
+                gbCategoryWise.Visible = false;
+                gbStock.Visible = false;
+                gbPopular.Visible = false;
             }
         }
 
@@ -353,7 +362,11 @@ namespace digitalPharma
 
         private void btnReturnProduct_Click(object sender, EventArgs e)
         {
+            GlobalVariable.FromDate = dtpFrom.Value.Date;
+            GlobalVariable.ToDate = dtpTo.Value.Date;
 
+            CrvReturnProductDateWise purchse = new CrvReturnProductDateWise();
+            purchse.Show();
         }
 
         private void btnExpired_Click(object sender, EventArgs e)

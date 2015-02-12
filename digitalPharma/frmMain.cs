@@ -176,7 +176,7 @@ namespace digitalPharma
                 {
                     // #3
                     client.BackColor = this.BackColor;
-                    client.BackgroundImage = Properties.Resources.logo_head;
+                    client.BackgroundImage = Properties.Resources.PharmacyPNG;
                     //client.BackgroundImageLayout= System.Windows.Forms.ImageLayout.Center;
                     this.BackgroundImageLayout = ImageLayout.Center;
                     // 4#

@@ -473,6 +473,14 @@ namespace digitalPharma
 				return this.GetTable<tbl_Shop>();
 			}
 		}
+		
+		public System.Data.Linq.Table<View_ReturnProductAndSupplier> View_ReturnProductAndSuppliers
+		{
+			get
+			{
+				return this.GetTable<View_ReturnProductAndSupplier>();
+			}
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_CounterNo")]
@@ -8254,6 +8262,213 @@ namespace digitalPharma
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.View_ReturnProductAndSupplier")]
+	public partial class View_ReturnProductAndSupplier
+	{
+		
+		private long _SN;
+		
+		private System.Nullable<System.DateTime> _Date;
+		
+		private System.Nullable<int> _SupplierID;
+		
+		private string _ProductID;
+		
+		private System.Nullable<int> _ReturnQty;
+		
+		private System.Nullable<int> _ShopID;
+		
+		private int _Expr1;
+		
+		private string _SupplierName;
+		
+		private string _Address;
+		
+		private string _ContactNo;
+		
+		private string _ContactPerson;
+		
+		public View_ReturnProductAndSupplier()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SN", DbType="BigInt NOT NULL")]
+		public long SN
+		{
+			get
+			{
+				return this._SN;
+			}
+			set
+			{
+				if ((this._SN != value))
+				{
+					this._SN = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Date", DbType="DateTime")]
+		public System.Nullable<System.DateTime> Date
+		{
+			get
+			{
+				return this._Date;
+			}
+			set
+			{
+				if ((this._Date != value))
+				{
+					this._Date = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SupplierID", DbType="Int")]
+		public System.Nullable<int> SupplierID
+		{
+			get
+			{
+				return this._SupplierID;
+			}
+			set
+			{
+				if ((this._SupplierID != value))
+				{
+					this._SupplierID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProductID", DbType="VarChar(50)")]
+		public string ProductID
+		{
+			get
+			{
+				return this._ProductID;
+			}
+			set
+			{
+				if ((this._ProductID != value))
+				{
+					this._ProductID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReturnQty", DbType="Int")]
+		public System.Nullable<int> ReturnQty
+		{
+			get
+			{
+				return this._ReturnQty;
+			}
+			set
+			{
+				if ((this._ReturnQty != value))
+				{
+					this._ReturnQty = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ShopID", DbType="Int")]
+		public System.Nullable<int> ShopID
+		{
+			get
+			{
+				return this._ShopID;
+			}
+			set
+			{
+				if ((this._ShopID != value))
+				{
+					this._ShopID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Expr1", DbType="Int NOT NULL")]
+		public int Expr1
+		{
+			get
+			{
+				return this._Expr1;
+			}
+			set
+			{
+				if ((this._Expr1 != value))
+				{
+					this._Expr1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SupplierName", DbType="NVarChar(255)")]
+		public string SupplierName
+		{
+			get
+			{
+				return this._SupplierName;
+			}
+			set
+			{
+				if ((this._SupplierName != value))
+				{
+					this._SupplierName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Address", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+		public string Address
+		{
+			get
+			{
+				return this._Address;
+			}
+			set
+			{
+				if ((this._Address != value))
+				{
+					this._Address = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ContactNo", DbType="VarChar(50)")]
+		public string ContactNo
+		{
+			get
+			{
+				return this._ContactNo;
+			}
+			set
+			{
+				if ((this._ContactNo != value))
+				{
+					this._ContactNo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ContactPerson", DbType="VarChar(100)")]
+		public string ContactPerson
+		{
+			get
+			{
+				return this._ContactPerson;
+			}
+			set
+			{
+				if ((this._ContactPerson != value))
+				{
+					this._ContactPerson = value;
+				}
 			}
 		}
 	}

@@ -36,7 +36,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.gbReturn = new System.Windows.Forms.GroupBox();
             this.btnReturnProduct = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
@@ -57,68 +57,70 @@
             this.btnLeadger = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.gbCategoryWise = new System.Windows.Forms.GroupBox();
             this.cmbProductCategory = new System.Windows.Forms.ComboBox();
             this.btnProductCategory = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.gbSupplierwise = new System.Windows.Forms.GroupBox();
             this.cmbSuppler = new System.Windows.Forms.ComboBox();
             this.btnSupplier = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.gbPopular = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
             this.btnMinimumStock = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.btnPopularProductList = new System.Windows.Forms.Button();
             this.btnStockSummery = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.gbPurchsaseDate = new System.Windows.Forms.GroupBox();
             this.btnPurchaseDatewise = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.gbPurchase = new System.Windows.Forms.GroupBox();
             this.cmbInvoiceNoPurchase = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnPurchaseSingle = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbSaleDate = new System.Windows.Forms.GroupBox();
             this.btnReportDateWise = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnCounter = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbSale = new System.Windows.Forms.GroupBox();
             this.cmbInvoiceNoSales = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnReportSingle = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.gbExpired = new System.Windows.Forms.GroupBox();
             this.btnExpired = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.dtpExpired = new System.Windows.Forms.DateTimePicker();
             this.txtExpiredDays = new System.Windows.Forms.TextBox();
+            this.gbStock = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
             this.tabPage6.SuspendLayout();
-            this.groupBox12.SuspendLayout();
+            this.gbReturn.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.gbIncome.SuspendLayout();
             this.gbExpense.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.gbProfit.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            this.groupBox6.SuspendLayout();
+            this.gbCategoryWise.SuspendLayout();
+            this.gbSupplierwise.SuspendLayout();
+            this.gbPopular.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox4.SuspendLayout();
+            this.gbPurchsaseDate.SuspendLayout();
+            this.gbPurchase.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbSaleDate.SuspendLayout();
+            this.gbSale.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage7.SuspendLayout();
-            this.groupBox7.SuspendLayout();
+            this.gbExpired.SuspendLayout();
+            this.gbStock.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -194,7 +196,7 @@
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage6.Controls.Add(this.groupBox12);
+            this.tabPage6.Controls.Add(this.gbReturn);
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -202,17 +204,17 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Return Product";
             // 
-            // groupBox12
+            // gbReturn
             // 
-            this.groupBox12.Controls.Add(this.btnReturnProduct);
-            this.groupBox12.Controls.Add(this.label16);
-            this.groupBox12.Location = new System.Drawing.Point(230, 48);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(386, 111);
-            this.groupBox12.TabIndex = 2;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Return Product Report";
-            this.groupBox12.Visible = false;
+            this.gbReturn.Controls.Add(this.btnReturnProduct);
+            this.gbReturn.Controls.Add(this.label16);
+            this.gbReturn.Location = new System.Drawing.Point(230, 48);
+            this.gbReturn.Name = "gbReturn";
+            this.gbReturn.Size = new System.Drawing.Size(386, 111);
+            this.gbReturn.TabIndex = 2;
+            this.gbReturn.TabStop = false;
+            this.gbReturn.Text = "Date Wise Return Product Report";
+            this.gbReturn.Visible = false;
             // 
             // btnReturnProduct
             // 
@@ -398,7 +400,7 @@
             this.gbProfit.Size = new System.Drawing.Size(423, 96);
             this.gbProfit.TabIndex = 0;
             this.gbProfit.TabStop = false;
-            this.gbProfit.Text = "Report";
+            this.gbProfit.Text = "Date Wise Report";
             // 
             // btnLeadger
             // 
@@ -422,11 +424,10 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage3.Controls.Add(this.groupBox11);
-            this.tabPage3.Controls.Add(this.groupBox9);
-            this.tabPage3.Controls.Add(this.label15);
-            this.tabPage3.Controls.Add(this.groupBox6);
-            this.tabPage3.Controls.Add(this.btnStockSummery);
+            this.tabPage3.Controls.Add(this.gbStock);
+            this.tabPage3.Controls.Add(this.gbCategoryWise);
+            this.tabPage3.Controls.Add(this.gbSupplierwise);
+            this.tabPage3.Controls.Add(this.gbPopular);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -434,33 +435,34 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Stock Report";
             // 
-            // groupBox11
+            // gbCategoryWise
             // 
-            this.groupBox11.Controls.Add(this.cmbProductCategory);
-            this.groupBox11.Controls.Add(this.btnProductCategory);
-            this.groupBox11.Controls.Add(this.label14);
-            this.groupBox11.Location = new System.Drawing.Point(15, 112);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(407, 89);
-            this.groupBox11.TabIndex = 1;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Product Category Wise Stock Report";
+            this.gbCategoryWise.Controls.Add(this.cmbProductCategory);
+            this.gbCategoryWise.Controls.Add(this.btnProductCategory);
+            this.gbCategoryWise.Controls.Add(this.label14);
+            this.gbCategoryWise.Location = new System.Drawing.Point(15, 112);
+            this.gbCategoryWise.Name = "gbCategoryWise";
+            this.gbCategoryWise.Size = new System.Drawing.Size(407, 109);
+            this.gbCategoryWise.TabIndex = 1;
+            this.gbCategoryWise.TabStop = false;
+            this.gbCategoryWise.Text = "Product Category Wise Stock Report";
             // 
             // cmbProductCategory
             // 
             this.cmbProductCategory.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cmbProductCategory.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbProductCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProductCategory.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbProductCategory.FormattingEnabled = true;
-            this.cmbProductCategory.Location = new System.Drawing.Point(185, 25);
+            this.cmbProductCategory.Location = new System.Drawing.Point(15, 44);
             this.cmbProductCategory.Name = "cmbProductCategory";
-            this.cmbProductCategory.Size = new System.Drawing.Size(217, 24);
+            this.cmbProductCategory.Size = new System.Drawing.Size(375, 23);
             this.cmbProductCategory.TabIndex = 0;
             this.cmbProductCategory.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbProductGroup_KeyPress);
             // 
             // btnProductCategory
             // 
-            this.btnProductCategory.Location = new System.Drawing.Point(210, 55);
+            this.btnProductCategory.Location = new System.Drawing.Point(160, 74);
             this.btnProductCategory.Name = "btnProductCategory";
             this.btnProductCategory.Size = new System.Drawing.Size(97, 28);
             this.btnProductCategory.TabIndex = 1;
@@ -471,33 +473,34 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(7, 28);
+            this.label14.Location = new System.Drawing.Point(12, 23);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(176, 16);
             this.label14.TabIndex = 7;
             this.label14.Text = "Select Product Category";
             // 
-            // groupBox9
+            // gbSupplierwise
             // 
-            this.groupBox9.Controls.Add(this.cmbSuppler);
-            this.groupBox9.Controls.Add(this.btnSupplier);
-            this.groupBox9.Controls.Add(this.label10);
-            this.groupBox9.Location = new System.Drawing.Point(15, 17);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(407, 89);
-            this.groupBox9.TabIndex = 0;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Supplier Wise Stock Report";
+            this.gbSupplierwise.Controls.Add(this.cmbSuppler);
+            this.gbSupplierwise.Controls.Add(this.btnSupplier);
+            this.gbSupplierwise.Controls.Add(this.label10);
+            this.gbSupplierwise.Location = new System.Drawing.Point(15, 17);
+            this.gbSupplierwise.Name = "gbSupplierwise";
+            this.gbSupplierwise.Size = new System.Drawing.Size(407, 89);
+            this.gbSupplierwise.TabIndex = 0;
+            this.gbSupplierwise.TabStop = false;
+            this.gbSupplierwise.Text = "Supplier Wise Stock Report";
             // 
             // cmbSuppler
             // 
             this.cmbSuppler.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cmbSuppler.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbSuppler.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSuppler.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSuppler.FormattingEnabled = true;
             this.cmbSuppler.Location = new System.Drawing.Point(132, 25);
             this.cmbSuppler.Name = "cmbSuppler";
-            this.cmbSuppler.Size = new System.Drawing.Size(258, 24);
+            this.cmbSuppler.Size = new System.Drawing.Size(258, 23);
             this.cmbSuppler.TabIndex = 0;
             this.cmbSuppler.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbSuppler_KeyPress);
             // 
@@ -523,24 +526,24 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(580, 51);
+            this.label15.Location = new System.Drawing.Point(195, 40);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(115, 16);
             this.label15.TabIndex = 4;
             this.label15.Text = "Stock Summary";
             // 
-            // groupBox6
+            // gbPopular
             // 
-            this.groupBox6.Controls.Add(this.label17);
-            this.groupBox6.Controls.Add(this.btnMinimumStock);
-            this.groupBox6.Controls.Add(this.label9);
-            this.groupBox6.Controls.Add(this.btnPopularProductList);
-            this.groupBox6.Location = new System.Drawing.Point(450, 129);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(405, 88);
-            this.groupBox6.TabIndex = 3;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Date Wise Report";
+            this.gbPopular.Controls.Add(this.label17);
+            this.gbPopular.Controls.Add(this.btnMinimumStock);
+            this.gbPopular.Controls.Add(this.label9);
+            this.gbPopular.Controls.Add(this.btnPopularProductList);
+            this.gbPopular.Location = new System.Drawing.Point(450, 129);
+            this.gbPopular.Name = "gbPopular";
+            this.gbPopular.Size = new System.Drawing.Size(405, 88);
+            this.gbPopular.TabIndex = 3;
+            this.gbPopular.TabStop = false;
+            this.gbPopular.Text = "Date Wise Report";
             // 
             // label17
             // 
@@ -583,7 +586,7 @@
             // 
             // btnStockSummery
             // 
-            this.btnStockSummery.Location = new System.Drawing.Point(477, 45);
+            this.btnStockSummery.Location = new System.Drawing.Point(92, 34);
             this.btnStockSummery.Name = "btnStockSummery";
             this.btnStockSummery.Size = new System.Drawing.Size(97, 28);
             this.btnStockSummery.TabIndex = 2;
@@ -594,8 +597,8 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage2.Controls.Add(this.groupBox5);
-            this.tabPage2.Controls.Add(this.groupBox4);
+            this.tabPage2.Controls.Add(this.gbPurchsaseDate);
+            this.tabPage2.Controls.Add(this.gbPurchase);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -603,16 +606,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Purchase Report";
             // 
-            // groupBox5
+            // gbPurchsaseDate
             // 
-            this.groupBox5.Controls.Add(this.btnPurchaseDatewise);
-            this.groupBox5.Controls.Add(this.label7);
-            this.groupBox5.Location = new System.Drawing.Point(453, 43);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(412, 107);
-            this.groupBox5.TabIndex = 1;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Date Wise Report";
+            this.gbPurchsaseDate.Controls.Add(this.btnPurchaseDatewise);
+            this.gbPurchsaseDate.Controls.Add(this.label7);
+            this.gbPurchsaseDate.Location = new System.Drawing.Point(453, 43);
+            this.gbPurchsaseDate.Name = "gbPurchsaseDate";
+            this.gbPurchsaseDate.Size = new System.Drawing.Size(412, 107);
+            this.gbPurchsaseDate.TabIndex = 1;
+            this.gbPurchsaseDate.TabStop = false;
+            this.gbPurchsaseDate.Text = "Date Wise Report";
             // 
             // btnPurchaseDatewise
             // 
@@ -633,16 +636,16 @@
             this.label7.TabIndex = 1;
             this.label7.Text = "Purchase Report";
             // 
-            // groupBox4
+            // gbPurchase
             // 
-            this.groupBox4.Controls.Add(this.cmbInvoiceNoPurchase);
-            this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Controls.Add(this.btnPurchaseSingle);
-            this.groupBox4.Location = new System.Drawing.Point(15, 43);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(412, 107);
-            this.groupBox4.TabIndex = 0;
-            this.groupBox4.TabStop = false;
+            this.gbPurchase.Controls.Add(this.cmbInvoiceNoPurchase);
+            this.gbPurchase.Controls.Add(this.label4);
+            this.gbPurchase.Controls.Add(this.btnPurchaseSingle);
+            this.gbPurchase.Location = new System.Drawing.Point(15, 43);
+            this.gbPurchase.Name = "gbPurchase";
+            this.gbPurchase.Size = new System.Drawing.Size(412, 107);
+            this.gbPurchase.TabIndex = 0;
+            this.gbPurchase.TabStop = false;
             // 
             // cmbInvoiceNoPurchase
             // 
@@ -676,8 +679,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage1.Controls.Add(this.groupBox3);
-            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.gbSaleDate);
+            this.tabPage1.Controls.Add(this.gbSale);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -685,18 +688,18 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Sales Report";
             // 
-            // groupBox3
+            // gbSaleDate
             // 
-            this.groupBox3.Controls.Add(this.btnReportDateWise);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.btnCounter);
-            this.groupBox3.Location = new System.Drawing.Point(442, 39);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(404, 116);
-            this.groupBox3.TabIndex = 1;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Date Wise Report";
+            this.gbSaleDate.Controls.Add(this.btnReportDateWise);
+            this.gbSaleDate.Controls.Add(this.label6);
+            this.gbSaleDate.Controls.Add(this.label5);
+            this.gbSaleDate.Controls.Add(this.btnCounter);
+            this.gbSaleDate.Location = new System.Drawing.Point(442, 39);
+            this.gbSaleDate.Name = "gbSaleDate";
+            this.gbSaleDate.Size = new System.Drawing.Size(404, 116);
+            this.gbSaleDate.TabIndex = 1;
+            this.gbSaleDate.TabStop = false;
+            this.gbSaleDate.Text = "Date Wise Report";
             // 
             // btnReportDateWise
             // 
@@ -738,17 +741,17 @@
             this.btnCounter.Visible = false;
             this.btnCounter.Click += new System.EventHandler(this.btnCounter_Click);
             // 
-            // groupBox1
+            // gbSale
             // 
-            this.groupBox1.Controls.Add(this.cmbInvoiceNoSales);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.btnReportSingle);
-            this.groupBox1.Location = new System.Drawing.Point(15, 39);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(405, 116);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Report";
+            this.gbSale.Controls.Add(this.cmbInvoiceNoSales);
+            this.gbSale.Controls.Add(this.label1);
+            this.gbSale.Controls.Add(this.btnReportSingle);
+            this.gbSale.Location = new System.Drawing.Point(15, 39);
+            this.gbSale.Name = "gbSale";
+            this.gbSale.Size = new System.Drawing.Size(405, 116);
+            this.gbSale.TabIndex = 0;
+            this.gbSale.TabStop = false;
+            this.gbSale.Text = "Report";
             // 
             // cmbInvoiceNoSales
             // 
@@ -797,7 +800,7 @@
             // tabPage7
             // 
             this.tabPage7.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage7.Controls.Add(this.groupBox7);
+            this.tabPage7.Controls.Add(this.gbExpired);
             this.tabPage7.Location = new System.Drawing.Point(4, 25);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
@@ -805,19 +808,19 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Expired Product";
             // 
-            // groupBox7
+            // gbExpired
             // 
-            this.groupBox7.Controls.Add(this.btnExpired);
-            this.groupBox7.Controls.Add(this.label21);
-            this.groupBox7.Controls.Add(this.label20);
-            this.groupBox7.Controls.Add(this.dtpExpired);
-            this.groupBox7.Controls.Add(this.txtExpiredDays);
-            this.groupBox7.Location = new System.Drawing.Point(282, 38);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(336, 141);
-            this.groupBox7.TabIndex = 0;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Expired Product List";
+            this.gbExpired.Controls.Add(this.btnExpired);
+            this.gbExpired.Controls.Add(this.label21);
+            this.gbExpired.Controls.Add(this.label20);
+            this.gbExpired.Controls.Add(this.dtpExpired);
+            this.gbExpired.Controls.Add(this.txtExpiredDays);
+            this.gbExpired.Location = new System.Drawing.Point(282, 38);
+            this.gbExpired.Name = "gbExpired";
+            this.gbExpired.Size = new System.Drawing.Size(336, 141);
+            this.gbExpired.TabIndex = 0;
+            this.gbExpired.TabStop = false;
+            this.gbExpired.Text = "Expired Product List";
             // 
             // btnExpired
             // 
@@ -864,10 +867,22 @@
             this.txtExpiredDays.TabIndex = 1;
             this.txtExpiredDays.Leave += new System.EventHandler(this.txtExpiredDays_Leave);
             // 
+            // gbStock
+            // 
+            this.gbStock.Controls.Add(this.label15);
+            this.gbStock.Controls.Add(this.btnStockSummery);
+            this.gbStock.Location = new System.Drawing.Point(450, 20);
+            this.gbStock.Name = "gbStock";
+            this.gbStock.Size = new System.Drawing.Size(396, 85);
+            this.gbStock.TabIndex = 5;
+            this.gbStock.TabStop = false;
+            this.gbStock.Text = "Stock Summary";
+            // 
             // frmReportAll
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(867, 387);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btnRefresh);
@@ -885,8 +900,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabPage6.ResumeLayout(false);
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
+            this.gbReturn.ResumeLayout(false);
+            this.gbReturn.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.gbIncome.ResumeLayout(false);
             this.gbIncome.PerformLayout();
@@ -896,27 +911,28 @@
             this.gbProfit.ResumeLayout(false);
             this.gbProfit.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            this.gbCategoryWise.ResumeLayout(false);
+            this.gbCategoryWise.PerformLayout();
+            this.gbSupplierwise.ResumeLayout(false);
+            this.gbSupplierwise.PerformLayout();
+            this.gbPopular.ResumeLayout(false);
+            this.gbPopular.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.gbPurchsaseDate.ResumeLayout(false);
+            this.gbPurchsaseDate.PerformLayout();
+            this.gbPurchase.ResumeLayout(false);
+            this.gbPurchase.PerformLayout();
             this.tabPage1.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbSaleDate.ResumeLayout(false);
+            this.gbSaleDate.PerformLayout();
+            this.gbSale.ResumeLayout(false);
+            this.gbSale.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
+            this.gbExpired.ResumeLayout(false);
+            this.gbExpired.PerformLayout();
+            this.gbStock.ResumeLayout(false);
+            this.gbStock.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -932,7 +948,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.GroupBox gbReturn;
         private System.Windows.Forms.Button btnReturnProduct;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TabPage tabPage5;
@@ -947,36 +963,36 @@
         private System.Windows.Forms.Button btnLeadger;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.GroupBox gbCategoryWise;
         private System.Windows.Forms.ComboBox cmbProductCategory;
         private System.Windows.Forms.Button btnProductCategory;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.GroupBox gbSupplierwise;
         private System.Windows.Forms.ComboBox cmbSuppler;
         private System.Windows.Forms.Button btnSupplier;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox gbPopular;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btnMinimumStock;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnPopularProductList;
         private System.Windows.Forms.Button btnStockSummery;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox gbPurchsaseDate;
         private System.Windows.Forms.Button btnPurchaseDatewise;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox gbPurchase;
         private System.Windows.Forms.ComboBox cmbInvoiceNoPurchase;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnPurchaseSingle;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gbSaleDate;
         private System.Windows.Forms.Button btnReportDateWise;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnCounter;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbSale;
         private System.Windows.Forms.ComboBox cmbInvoiceNoSales;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnReportSingle;
@@ -991,8 +1007,9 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.DateTimePicker dtpExpired;
         private System.Windows.Forms.TextBox txtExpiredDays;
-        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox gbExpired;
         private System.Windows.Forms.Button btnExpired;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.GroupBox gbStock;
     }
 }

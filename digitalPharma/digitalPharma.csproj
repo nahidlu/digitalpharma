@@ -119,6 +119,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Barcode.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmSubMenuForSalesMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubMenuForSalesMan.designer.cs">
+      <DependentUpon>frmSubMenuForSalesMan.cs</DependentUpon>
+    </Compile>
     <Compile Include="CrvCounterWiseSaleReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,12 @@
     </Compile>
     <Compile Include="CrvPurchse.designer.cs">
       <DependentUpon>CrvPurchse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrvReturnProductDateWise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrvReturnProductDateWise.designer.cs">
+      <DependentUpon>CrvReturnProductDateWise.cs</DependentUpon>
     </Compile>
     <Compile Include="CrvSalesReceipt.cs">
       <SubType>Form</SubType>
@@ -173,6 +185,12 @@
     </Compile>
     <Compile Include="FrmDataBase.designer.cs">
       <DependentUpon>FrmDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintReceipt.designer.cs">
+      <DependentUpon>frmPrintReceipt.cs</DependentUpon>
     </Compile>
     <Compile Include="frmProduct.cs">
       <SubType>Form</SubType>
@@ -289,16 +307,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="AccountSystem\Reports\CrLedgerReport.cs">
       <DependentUpon>CrLedgerReport.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Reports\CrExpiredProductList.cs">
       <DependentUpon>CrExpiredProductList.rpt</DependentUpon>
@@ -310,6 +328,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CrMostSellingProductList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrReturnProductDateWise.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrReturnProductDateWise.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\CrStockReportProductCategoryWise.cs">
@@ -419,6 +443,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrExpenseReportAccountWise.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSubMenuForSalesMan.resx">
+      <DependentUpon>frmSubMenuForSalesMan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrvCounterWiseSaleReport.resx">
       <DependentUpon>CrvCounterWiseSaleReport.cs</DependentUpon>
     </EmbeddedResource>
@@ -427,6 +454,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CrvPurchse.resx">
       <DependentUpon>CrvPurchse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrvReturnProductDateWise.resx">
+      <DependentUpon>CrvReturnProductDateWise.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrvSalesReceipt.resx">
       <DependentUpon>CrvSalesReceipt.cs</DependentUpon>
@@ -442,6 +472,9 @@
     </None>
     <EmbeddedResource Include="FrmDataBase.resx">
       <DependentUpon>FrmDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintReceipt.resx">
+      <DependentUpon>frmPrintReceipt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProduct.resx">
       <DependentUpon>frmProduct.cs</DependentUpon>
@@ -511,6 +544,10 @@
     <EmbeddedResource Include="Reports\CrMostSellingProductList.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrMostSellingProductList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrReturnProductDateWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrReturnProductDateWise.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\CrStockReportProductCategoryWise.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -594,6 +631,36 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medicine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PharmacyPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reports1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

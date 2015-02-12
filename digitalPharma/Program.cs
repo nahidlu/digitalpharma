@@ -80,11 +80,11 @@ namespace digitalPharma
 
             }
             //bool logic = scr.Algorithm("6A7FEBF6A50E3F1FBFF", reg_path);
-            //bool logic = scr.Algorithm("F41FEBFC4E8FD27FBFF", reg_path);//super market
+            bool logic = scr.Algorithm("F41FEBFC4E8FD27FBFF", reg_path);//super market
             //bool logic = scr.Algorithm("F34FEBF0C4A984DFBFF", reg_path);
 
             //Application.Run(new frmTransferData());
-            //if (logic == true)
+            if (logic == true)
             //new SplashScreenApp().Run(args);
 
             Application.Run(new frmLogin());

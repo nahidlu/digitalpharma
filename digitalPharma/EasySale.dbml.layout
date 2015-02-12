@@ -251,5 +251,11 @@
         <elementListCompartment Id="b3d34da6-4f27-4bec-92fd-733b1cb8cfcc" absoluteBounds="0.51500000000000012, 8.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="2d551e8d-5c18-41fc-9b25-cf04a7ff4df9" isExpanded="false" absoluteBounds="4.25, 12.125, 2, 0.45">
+      <DataClassMoniker Name="/EasySaleDataContext/View_ReturnProductAndSupplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f9e546bd-88dc-4a66-9cfb-8683b2014250" absoluteBounds="4.265, 12.585, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

@@ -9,10 +9,10 @@ using System.Windows.Forms;
 
 namespace digitalPharma
 {
-    public partial class frmSubMenu : Form
+    public partial class frmSubMenuForSalesMan : Form
     {
 
-        public frmSubMenu()
+        public frmSubMenuForSalesMan()
         {
             InitializeComponent();
         }
@@ -176,11 +176,6 @@ namespace digitalPharma
             frmSubMenu sub = new frmSubMenu();
             //newForm.Location = new Point(sub.Width, 50);
             newForm.Show();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
 
 

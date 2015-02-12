@@ -38,12 +38,12 @@ namespace digitalPharma
             Sale.SetParameterValue("ShopName", GlobalVariable.ShopName);
             Sale.SetParameterValue("Address1", GlobalVariable.Address1);
             Sale.SetParameterValue("Address2", GlobalVariable.Address2);
-            Sale.SetParameterValue("Phone", GlobalVariable.Phone);
+            Sale.SetParameterValue("Phone","Ph: " + GlobalVariable.Phone);
             Sale.SetParameterValue("Slogan", GlobalVariable.Slogan);
             crystalReportViewer1.ReportSource = Sale;
-             PrinterSettings getprinterName = new PrinterSettings();
-             Sale.PrintOptions.PrinterName = getprinterName.PrinterName;
-             Sale.PrintToPrinter(1, true, 1, 1);
+             //PrinterSettings getprinterName = new PrinterSettings();
+             //Sale.PrintOptions.PrinterName = getprinterName.PrinterName;
+             //Sale.PrintToPrinter(1, true, 1, 1);
 
            /* ReportDocument rdoc = new ReportDocument();
             //rdoc.Load(Application.StartupPath + "\\" + @"Reports\CrSalesReceipt.rpt");

@@ -56,9 +56,18 @@ namespace digitalPharma
                         frmMain obj = new frmMain();
                         obj.Show();
                         this.Hide();
-                        frmSubMenu sub = new frmSubMenu();
-                        sub.MdiParent = obj;
-                        sub.Show();
+                        if (GlobalVariable.userType == "Sales Man")
+                        {
+                            frmSubMenuForSalesMan sub = new frmSubMenuForSalesMan();
+                            sub.MdiParent = obj;
+                            sub.Show();
+                        }
+                        else
+                        {
+                            frmSubMenu sub = new frmSubMenu();
+                            sub.MdiParent = obj;
+                            sub.Show();
+                        }
                     }
                 }
                 else
