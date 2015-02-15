@@ -98,8 +98,6 @@
             this.label31 = new System.Windows.Forms.Label();
             this.txtDiscountCardNo = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.btnQuantityPlus = new System.Windows.Forms.Button();
-            this.btnRowRemove = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -119,6 +117,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.txtDiscountPercent = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.btnQuantityPlus = new System.Windows.Forms.Button();
+            this.btnRowRemove = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgSale)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -188,7 +188,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(433, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 25);
@@ -199,7 +199,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lblTotal.ForeColor = System.Drawing.Color.White;
             this.lblTotal.Location = new System.Drawing.Point(514, 11);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(94, 25);
@@ -355,9 +355,11 @@
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnClear.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(965, 420);
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(980, 420);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 41);
             this.btnClear.TabIndex = 18;
@@ -367,11 +369,13 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(802, 420);
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(830, 420);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(157, 41);
+            this.btnSave.Size = new System.Drawing.Size(144, 41);
             this.btnSave.TabIndex = 17;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -418,6 +422,7 @@
             // 
             // txtCartTotal
             // 
+            this.txtCartTotal.BackColor = System.Drawing.SystemColors.Control;
             this.txtCartTotal.Location = new System.Drawing.Point(842, 184);
             this.txtCartTotal.Name = "txtCartTotal";
             this.txtCartTotal.ReadOnly = true;
@@ -544,13 +549,13 @@
             // 
             // txtAvailableQty
             // 
-            this.txtAvailableQty.BackColor = System.Drawing.SystemColors.Control;
+            this.txtAvailableQty.BackColor = System.Drawing.Color.SteelBlue;
             this.txtAvailableQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAvailableQty.ForeColor = System.Drawing.Color.Crimson;
+            this.txtAvailableQty.ForeColor = System.Drawing.Color.White;
             this.txtAvailableQty.Location = new System.Drawing.Point(954, 11);
             this.txtAvailableQty.Name = "txtAvailableQty";
             this.txtAvailableQty.ReadOnly = true;
-            this.txtAvailableQty.Size = new System.Drawing.Size(100, 26);
+            this.txtAvailableQty.Size = new System.Drawing.Size(112, 26);
             this.txtAvailableQty.TabIndex = 48;
             this.txtAvailableQty.TabStop = false;
             this.txtAvailableQty.Text = "0";
@@ -559,7 +564,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Crimson;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(785, 10);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(166, 25);
@@ -569,10 +574,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(8, 8);
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(8, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 31);
+            this.label2.Size = new System.Drawing.Size(119, 29);
             this.label2.TabIndex = 29;
             this.label2.Text = "Sales Form";
             // 
@@ -596,20 +601,23 @@
             // 
             // btnNewInvoiceNO
             // 
-            this.btnNewInvoiceNO.Location = new System.Drawing.Point(298, 54);
+            this.btnNewInvoiceNO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnNewInvoiceNO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewInvoiceNO.ForeColor = System.Drawing.Color.White;
+            this.btnNewInvoiceNO.Location = new System.Drawing.Point(298, 51);
             this.btnNewInvoiceNO.Name = "btnNewInvoiceNO";
-            this.btnNewInvoiceNO.Size = new System.Drawing.Size(75, 25);
+            this.btnNewInvoiceNO.Size = new System.Drawing.Size(75, 29);
             this.btnNewInvoiceNO.TabIndex = 51;
             this.btnNewInvoiceNO.TabStop = false;
             this.btnNewInvoiceNO.Text = "New";
-            this.btnNewInvoiceNO.UseVisualStyleBackColor = true;
+            this.btnNewInvoiceNO.UseVisualStyleBackColor = false;
             this.btnNewInvoiceNO.Click += new System.EventHandler(this.btnNewInvoiceNO_Click);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Location = new System.Drawing.Point(929, 238);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(24, 20);
@@ -669,7 +677,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label28.ForeColor = System.Drawing.Color.Black;
             this.label28.Location = new System.Drawing.Point(1039, 187);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(27, 16);
@@ -679,7 +687,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label33.ForeColor = System.Drawing.Color.Black;
             this.label33.Location = new System.Drawing.Point(1036, 269);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(27, 16);
@@ -689,7 +697,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label34.ForeColor = System.Drawing.Color.Black;
             this.label34.Location = new System.Drawing.Point(1036, 294);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(27, 16);
@@ -699,7 +707,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label35.ForeColor = System.Drawing.Color.Black;
             this.label35.Location = new System.Drawing.Point(1036, 322);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(27, 16);
@@ -709,8 +717,8 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label36.Location = new System.Drawing.Point(1039, 347);
+            this.label36.ForeColor = System.Drawing.Color.Black;
+            this.label36.Location = new System.Drawing.Point(1036, 350);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(27, 16);
             this.label36.TabIndex = 59;
@@ -775,32 +783,6 @@
             this.label37.Size = new System.Drawing.Size(129, 16);
             this.label37.TabIndex = 21;
             this.label37.Text = "Discount Card No";
-            // 
-            // btnQuantityPlus
-            // 
-            this.btnQuantityPlus.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuantityPlus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnQuantityPlus.Image = global::digitalPharma.Properties.Resources.plus2;
-            this.btnQuantityPlus.Location = new System.Drawing.Point(610, 156);
-            this.btnQuantityPlus.Name = "btnQuantityPlus";
-            this.btnQuantityPlus.Size = new System.Drawing.Size(30, 25);
-            this.btnQuantityPlus.TabIndex = 4;
-            this.btnQuantityPlus.TabStop = false;
-            this.btnQuantityPlus.UseVisualStyleBackColor = true;
-            this.btnQuantityPlus.Click += new System.EventHandler(this.btnQuantityPlus_Click);
-            // 
-            // btnRowRemove
-            // 
-            this.btnRowRemove.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRowRemove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnRowRemove.Image = global::digitalPharma.Properties.Resources.Minus2;
-            this.btnRowRemove.Location = new System.Drawing.Point(648, 154);
-            this.btnRowRemove.Name = "btnRowRemove";
-            this.btnRowRemove.Size = new System.Drawing.Size(29, 27);
-            this.btnRowRemove.TabIndex = 5;
-            this.btnRowRemove.TabStop = false;
-            this.btnRowRemove.UseVisualStyleBackColor = true;
-            this.btnRowRemove.Click += new System.EventHandler(this.btnRowRemove_Click);
             // 
             // groupBox3
             // 
@@ -897,13 +879,16 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(444, 156);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(444, 153);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(76, 28);
+            this.btnAdd.Size = new System.Drawing.Size(76, 30);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label9
@@ -928,13 +913,16 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.BackColor = System.Drawing.Color.Crimson;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(528, 156);
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(528, 153);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(76, 28);
+            this.btnDelete.Size = new System.Drawing.Size(76, 30);
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // cbReturnProduct
@@ -964,7 +952,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(929, 210);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(24, 20);
@@ -974,7 +962,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(1039, 216);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(27, 16);
@@ -992,7 +980,7 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.BackColor = System.Drawing.SystemColors.Info;
+            this.groupBox6.BackColor = System.Drawing.Color.SteelBlue;
             this.groupBox6.Controls.Add(this.label2);
             this.groupBox6.Controls.Add(this.lblAdvance);
             this.groupBox6.Controls.Add(this.lblAdTk);
@@ -1000,11 +988,38 @@
             this.groupBox6.Controls.Add(this.txtAvailableQty);
             this.groupBox6.Controls.Add(this.lblTotal);
             this.groupBox6.Controls.Add(this.label1);
-            this.groupBox6.Location = new System.Drawing.Point(12, -5);
+            this.groupBox6.ForeColor = System.Drawing.Color.White;
+            this.groupBox6.Location = new System.Drawing.Point(3, -7);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(1063, 42);
+            this.groupBox6.Size = new System.Drawing.Size(1072, 42);
             this.groupBox6.TabIndex = 105;
             this.groupBox6.TabStop = false;
+            // 
+            // btnQuantityPlus
+            // 
+            this.btnQuantityPlus.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuantityPlus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnQuantityPlus.Image = global::digitalPharma.Properties.Resources._1423765228_add;
+            this.btnQuantityPlus.Location = new System.Drawing.Point(610, 153);
+            this.btnQuantityPlus.Name = "btnQuantityPlus";
+            this.btnQuantityPlus.Size = new System.Drawing.Size(30, 29);
+            this.btnQuantityPlus.TabIndex = 4;
+            this.btnQuantityPlus.TabStop = false;
+            this.btnQuantityPlus.UseVisualStyleBackColor = true;
+            this.btnQuantityPlus.Click += new System.EventHandler(this.btnQuantityPlus_Click);
+            // 
+            // btnRowRemove
+            // 
+            this.btnRowRemove.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRowRemove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnRowRemove.Image = global::digitalPharma.Properties.Resources._1423765217_round_remove;
+            this.btnRowRemove.Location = new System.Drawing.Point(648, 153);
+            this.btnRowRemove.Name = "btnRowRemove";
+            this.btnRowRemove.Size = new System.Drawing.Size(29, 30);
+            this.btnRowRemove.TabIndex = 5;
+            this.btnRowRemove.TabStop = false;
+            this.btnRowRemove.UseVisualStyleBackColor = true;
+            this.btnRowRemove.Click += new System.EventHandler(this.btnRowRemove_Click);
             // 
             // frmSale
             // 
@@ -1012,7 +1027,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1083, 522);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.txtDiscountPercent);
@@ -1067,9 +1082,10 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.Teal;
+            this.ForeColor = System.Drawing.Color.Black;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "frmSale";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Sales Form";

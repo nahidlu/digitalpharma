@@ -18,7 +18,8 @@ namespace digitalPharma
         }
         private void frmSubMenu_Load(object sender, EventArgs e)
         {
-
+            frmSubMenu sub = new frmSubMenu();
+            sub.Height = Screen.PrimaryScreen.Bounds.Height;
         }
 
 

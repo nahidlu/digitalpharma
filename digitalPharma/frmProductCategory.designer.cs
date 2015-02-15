@@ -81,6 +81,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.txtProductIDUpdate = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.cachedCrLedgerReport1 = new digitalPharma.AccountSystem.Reports.CachedCrLedgerReport();
             ((System.ComponentModel.ISupportInitialize)(this.dgCategory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgProductName)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -97,12 +98,15 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(27, 72);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 26);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label1
@@ -128,44 +132,56 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.BackColor = System.Drawing.Color.Crimson;
             this.btnDelete.Enabled = false;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(108, 72);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 26);
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnClear
             // 
+            this.btnClear.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Location = new System.Drawing.Point(189, 72);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 26);
             this.btnClear.TabIndex = 3;
             this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnClearProduct
             // 
+            this.btnClearProduct.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btnClearProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearProduct.ForeColor = System.Drawing.Color.White;
             this.btnClearProduct.Location = new System.Drawing.Point(332, 204);
             this.btnClearProduct.Name = "btnClearProduct";
             this.btnClearProduct.Size = new System.Drawing.Size(75, 26);
             this.btnClearProduct.TabIndex = 8;
             this.btnClearProduct.Text = "Clear";
-            this.btnClearProduct.UseVisualStyleBackColor = true;
+            this.btnClearProduct.UseVisualStyleBackColor = false;
             this.btnClearProduct.Click += new System.EventHandler(this.btnClearProduct_Click);
             // 
             // btnDeleteProduct
             // 
+            this.btnDeleteProduct.BackColor = System.Drawing.Color.Crimson;
             this.btnDeleteProduct.Enabled = false;
+            this.btnDeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteProduct.ForeColor = System.Drawing.Color.White;
             this.btnDeleteProduct.Location = new System.Drawing.Point(251, 204);
             this.btnDeleteProduct.Name = "btnDeleteProduct";
             this.btnDeleteProduct.Size = new System.Drawing.Size(75, 26);
             this.btnDeleteProduct.TabIndex = 7;
             this.btnDeleteProduct.Text = "Delete";
-            this.btnDeleteProduct.UseVisualStyleBackColor = true;
+            this.btnDeleteProduct.UseVisualStyleBackColor = false;
             this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
             // 
             // dgProductName
@@ -216,12 +232,15 @@
             // 
             // btnAddProduct
             // 
+            this.btnAddProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddProduct.ForeColor = System.Drawing.Color.White;
             this.btnAddProduct.Location = new System.Drawing.Point(170, 204);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(75, 26);
             this.btnAddProduct.TabIndex = 6;
             this.btnAddProduct.Text = "Add";
-            this.btnAddProduct.UseVisualStyleBackColor = true;
+            this.btnAddProduct.UseVisualStyleBackColor = false;
             this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // txtProductName
@@ -460,14 +479,17 @@
             // 
             // btnBarcode
             // 
+            this.btnBarcode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
             this.btnBarcode.Enabled = false;
+            this.btnBarcode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBarcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBarcode.ForeColor = System.Drawing.Color.White;
             this.btnBarcode.Location = new System.Drawing.Point(235, 334);
             this.btnBarcode.Name = "btnBarcode";
             this.btnBarcode.Size = new System.Drawing.Size(87, 28);
             this.btnBarcode.TabIndex = 10;
             this.btnBarcode.Text = "Barcode";
-            this.btnBarcode.UseVisualStyleBackColor = true;
+            this.btnBarcode.UseVisualStyleBackColor = false;
             this.btnBarcode.Visible = false;
             this.btnBarcode.Click += new System.EventHandler(this.btnBarcode_Click);
             // 
@@ -539,23 +561,29 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
             this.btnUpdate.Enabled = false;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.Location = new System.Drawing.Point(153, 302);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(79, 26);
             this.btnUpdate.TabIndex = 7;
             this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnClearUpdate
             // 
+            this.btnClearUpdate.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btnClearUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearUpdate.ForeColor = System.Drawing.Color.White;
             this.btnClearUpdate.Location = new System.Drawing.Point(243, 302);
             this.btnClearUpdate.Name = "btnClearUpdate";
             this.btnClearUpdate.Size = new System.Drawing.Size(79, 26);
             this.btnClearUpdate.TabIndex = 8;
             this.btnClearUpdate.Text = "Clear";
-            this.btnClearUpdate.UseVisualStyleBackColor = true;
+            this.btnClearUpdate.UseVisualStyleBackColor = false;
             this.btnClearUpdate.Click += new System.EventHandler(this.btnClearUpdate_Click);
             // 
             // label6
@@ -660,7 +688,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1080, 499);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -741,5 +769,6 @@
         private System.Windows.Forms.TextBox txtDosagesDescription;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label12;
+        private AccountSystem.Reports.CachedCrLedgerReport cachedCrLedgerReport1;
     }
 }

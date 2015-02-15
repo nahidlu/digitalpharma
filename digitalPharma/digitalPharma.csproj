@@ -119,6 +119,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Barcode.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmSubMenu1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmSubMenu.resx</DependentUpon>
+    </Compile>
     <Compile Include="frmSubMenuForSalesMan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -515,6 +520,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSubMenu.resx">
       <DependentUpon>frmSubMenu.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmSubMenu1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSupplier.resx">
       <DependentUpon>frmSupplier.cs</DependentUpon>
@@ -661,6 +668,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\software-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1423765228_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1423765217_round_remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

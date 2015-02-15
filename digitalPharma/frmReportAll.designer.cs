@@ -57,6 +57,9 @@
             this.btnLeadger = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.gbStock = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.btnStockSummery = new System.Windows.Forms.Button();
             this.gbCategoryWise = new System.Windows.Forms.GroupBox();
             this.cmbProductCategory = new System.Windows.Forms.ComboBox();
             this.btnProductCategory = new System.Windows.Forms.Button();
@@ -65,13 +68,11 @@
             this.cmbSuppler = new System.Windows.Forms.ComboBox();
             this.btnSupplier = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.gbPopular = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
             this.btnMinimumStock = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.btnPopularProductList = new System.Windows.Forms.Button();
-            this.btnStockSummery = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.gbPurchsaseDate = new System.Windows.Forms.GroupBox();
             this.btnPurchaseDatewise = new System.Windows.Forms.Button();
@@ -98,7 +99,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.dtpExpired = new System.Windows.Forms.DateTimePicker();
             this.txtExpiredDays = new System.Windows.Forms.TextBox();
-            this.gbStock = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.gbReturn.SuspendLayout();
@@ -108,6 +108,7 @@
             this.tabPage4.SuspendLayout();
             this.gbProfit.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.gbStock.SuspendLayout();
             this.gbCategoryWise.SuspendLayout();
             this.gbSupplierwise.SuspendLayout();
             this.gbPopular.SuspendLayout();
@@ -120,7 +121,6 @@
             this.tabControl1.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.gbExpired.SuspendLayout();
-            this.gbStock.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -195,8 +195,9 @@
             // 
             // tabPage6
             // 
-            this.tabPage6.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage6.BackColor = System.Drawing.Color.AliceBlue;
             this.tabPage6.Controls.Add(this.gbReturn);
+            this.tabPage6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -208,6 +209,7 @@
             // 
             this.gbReturn.Controls.Add(this.btnReturnProduct);
             this.gbReturn.Controls.Add(this.label16);
+            this.gbReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbReturn.Location = new System.Drawing.Point(230, 48);
             this.gbReturn.Name = "gbReturn";
             this.gbReturn.Size = new System.Drawing.Size(386, 111);
@@ -218,18 +220,22 @@
             // 
             // btnReturnProduct
             // 
+            this.btnReturnProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnReturnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReturnProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturnProduct.ForeColor = System.Drawing.Color.White;
             this.btnReturnProduct.Location = new System.Drawing.Point(9, 34);
             this.btnReturnProduct.Name = "btnReturnProduct";
-            this.btnReturnProduct.Size = new System.Drawing.Size(75, 31);
+            this.btnReturnProduct.Size = new System.Drawing.Size(81, 40);
             this.btnReturnProduct.TabIndex = 2;
             this.btnReturnProduct.Text = ">>>";
-            this.btnReturnProduct.UseVisualStyleBackColor = true;
+            this.btnReturnProduct.UseVisualStyleBackColor = false;
             this.btnReturnProduct.Click += new System.EventHandler(this.btnReturnProduct_Click);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(90, 41);
+            this.label16.Location = new System.Drawing.Point(96, 42);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(161, 16);
             this.label16.TabIndex = 2;
@@ -237,7 +243,7 @@
             // 
             // tabPage5
             // 
-            this.tabPage5.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage5.BackColor = System.Drawing.Color.AliceBlue;
             this.tabPage5.Controls.Add(this.gbIncome);
             this.tabPage5.Controls.Add(this.gbExpense);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
@@ -263,19 +269,23 @@
             // 
             // btnHeadIncome
             // 
+            this.btnHeadIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnHeadIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHeadIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHeadIncome.ForeColor = System.Drawing.Color.White;
             this.btnHeadIncome.Location = new System.Drawing.Point(57, 106);
             this.btnHeadIncome.Name = "btnHeadIncome";
-            this.btnHeadIncome.Size = new System.Drawing.Size(75, 31);
+            this.btnHeadIncome.Size = new System.Drawing.Size(75, 35);
             this.btnHeadIncome.TabIndex = 2;
             this.btnHeadIncome.Text = ">>>";
-            this.btnHeadIncome.UseVisualStyleBackColor = true;
+            this.btnHeadIncome.UseVisualStyleBackColor = false;
             this.btnHeadIncome.Click += new System.EventHandler(this.btnHeadIncome_Click);
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Teal;
+            this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(153, 91);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(156, 16);
@@ -284,12 +294,16 @@
             // 
             // btnIncome
             // 
+            this.btnIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIncome.ForeColor = System.Drawing.Color.White;
             this.btnIncome.Location = new System.Drawing.Point(57, 37);
             this.btnIncome.Name = "btnIncome";
-            this.btnIncome.Size = new System.Drawing.Size(75, 31);
+            this.btnIncome.Size = new System.Drawing.Size(75, 35);
             this.btnIncome.TabIndex = 0;
             this.btnIncome.Text = ">>>";
-            this.btnIncome.UseVisualStyleBackColor = true;
+            this.btnIncome.UseVisualStyleBackColor = false;
             this.btnIncome.Click += new System.EventHandler(this.btnIncome_Click);
             // 
             // cmbIncomeHeadname
@@ -329,19 +343,23 @@
             // 
             // btnHead
             // 
+            this.btnHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnHead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHead.ForeColor = System.Drawing.Color.White;
             this.btnHead.Location = new System.Drawing.Point(57, 106);
             this.btnHead.Name = "btnHead";
-            this.btnHead.Size = new System.Drawing.Size(75, 31);
+            this.btnHead.Size = new System.Drawing.Size(75, 35);
             this.btnHead.TabIndex = 3;
             this.btnHead.Text = ">>>";
-            this.btnHead.UseVisualStyleBackColor = true;
+            this.btnHead.UseVisualStyleBackColor = false;
             this.btnHead.Click += new System.EventHandler(this.btnHead_Click);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Teal;
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(153, 91);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(156, 16);
@@ -350,12 +368,16 @@
             // 
             // btnExpense
             // 
+            this.btnExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExpense.ForeColor = System.Drawing.Color.White;
             this.btnExpense.Location = new System.Drawing.Point(57, 37);
             this.btnExpense.Name = "btnExpense";
-            this.btnExpense.Size = new System.Drawing.Size(75, 31);
+            this.btnExpense.Size = new System.Drawing.Size(75, 35);
             this.btnExpense.TabIndex = 0;
             this.btnExpense.Text = ">>>";
-            this.btnExpense.UseVisualStyleBackColor = true;
+            this.btnExpense.UseVisualStyleBackColor = false;
             this.btnExpense.Click += new System.EventHandler(this.btnExpense_Click);
             // 
             // cmbHeaderName
@@ -382,7 +404,7 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage4.BackColor = System.Drawing.Color.AliceBlue;
             this.tabPage4.Controls.Add(this.gbProfit);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
@@ -404,12 +426,16 @@
             // 
             // btnLeadger
             // 
+            this.btnLeadger.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnLeadger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLeadger.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLeadger.ForeColor = System.Drawing.Color.White;
             this.btnLeadger.Location = new System.Drawing.Point(72, 36);
             this.btnLeadger.Name = "btnLeadger";
-            this.btnLeadger.Size = new System.Drawing.Size(97, 28);
+            this.btnLeadger.Size = new System.Drawing.Size(97, 38);
             this.btnLeadger.TabIndex = 0;
             this.btnLeadger.Text = ">>>";
-            this.btnLeadger.UseVisualStyleBackColor = true;
+            this.btnLeadger.UseVisualStyleBackColor = false;
             this.btnLeadger.Click += new System.EventHandler(this.btnLeadger_Click);
             // 
             // label11
@@ -423,7 +449,7 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage3.BackColor = System.Drawing.Color.AliceBlue;
             this.tabPage3.Controls.Add(this.gbStock);
             this.tabPage3.Controls.Add(this.gbCategoryWise);
             this.tabPage3.Controls.Add(this.gbSupplierwise);
@@ -434,6 +460,40 @@
             this.tabPage3.Size = new System.Drawing.Size(861, 227);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Stock Report";
+            // 
+            // gbStock
+            // 
+            this.gbStock.Controls.Add(this.label15);
+            this.gbStock.Controls.Add(this.btnStockSummery);
+            this.gbStock.Location = new System.Drawing.Point(450, 20);
+            this.gbStock.Name = "gbStock";
+            this.gbStock.Size = new System.Drawing.Size(396, 85);
+            this.gbStock.TabIndex = 5;
+            this.gbStock.TabStop = false;
+            this.gbStock.Text = "Stock Summary";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(195, 40);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(115, 16);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "Stock Summary";
+            // 
+            // btnStockSummery
+            // 
+            this.btnStockSummery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnStockSummery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStockSummery.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStockSummery.ForeColor = System.Drawing.Color.White;
+            this.btnStockSummery.Location = new System.Drawing.Point(92, 34);
+            this.btnStockSummery.Name = "btnStockSummery";
+            this.btnStockSummery.Size = new System.Drawing.Size(97, 32);
+            this.btnStockSummery.TabIndex = 0;
+            this.btnStockSummery.Text = ">>>";
+            this.btnStockSummery.UseVisualStyleBackColor = false;
+            this.btnStockSummery.Click += new System.EventHandler(this.btnStockSummery_Click);
             // 
             // gbCategoryWise
             // 
@@ -462,12 +522,16 @@
             // 
             // btnProductCategory
             // 
-            this.btnProductCategory.Location = new System.Drawing.Point(160, 74);
+            this.btnProductCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnProductCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductCategory.ForeColor = System.Drawing.Color.White;
+            this.btnProductCategory.Location = new System.Drawing.Point(160, 71);
             this.btnProductCategory.Name = "btnProductCategory";
-            this.btnProductCategory.Size = new System.Drawing.Size(97, 28);
+            this.btnProductCategory.Size = new System.Drawing.Size(97, 32);
             this.btnProductCategory.TabIndex = 1;
             this.btnProductCategory.Text = ">>>";
-            this.btnProductCategory.UseVisualStyleBackColor = true;
+            this.btnProductCategory.UseVisualStyleBackColor = false;
             this.btnProductCategory.Click += new System.EventHandler(this.btnProductCategory_Click);
             // 
             // label14
@@ -506,12 +570,16 @@
             // 
             // btnSupplier
             // 
-            this.btnSupplier.Location = new System.Drawing.Point(209, 55);
+            this.btnSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSupplier.ForeColor = System.Drawing.Color.White;
+            this.btnSupplier.Location = new System.Drawing.Point(209, 52);
             this.btnSupplier.Name = "btnSupplier";
-            this.btnSupplier.Size = new System.Drawing.Size(97, 28);
+            this.btnSupplier.Size = new System.Drawing.Size(97, 32);
             this.btnSupplier.TabIndex = 1;
             this.btnSupplier.Text = ">>>";
-            this.btnSupplier.UseVisualStyleBackColor = true;
+            this.btnSupplier.UseVisualStyleBackColor = false;
             this.btnSupplier.Click += new System.EventHandler(this.btnSupplier_Click);
             // 
             // label10
@@ -522,15 +590,6 @@
             this.label10.Size = new System.Drawing.Size(114, 16);
             this.label10.TabIndex = 7;
             this.label10.Text = "Select Supplier";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(195, 40);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(115, 16);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "Stock Summary";
             // 
             // gbPopular
             // 
@@ -557,12 +616,16 @@
             // 
             // btnMinimumStock
             // 
+            this.btnMinimumStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnMinimumStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimumStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimumStock.ForeColor = System.Drawing.Color.White;
             this.btnMinimumStock.Location = new System.Drawing.Point(92, 58);
             this.btnMinimumStock.Name = "btnMinimumStock";
-            this.btnMinimumStock.Size = new System.Drawing.Size(97, 28);
+            this.btnMinimumStock.Size = new System.Drawing.Size(97, 32);
             this.btnMinimumStock.TabIndex = 1;
             this.btnMinimumStock.Text = ">>>";
-            this.btnMinimumStock.UseVisualStyleBackColor = true;
+            this.btnMinimumStock.UseVisualStyleBackColor = false;
             this.btnMinimumStock.Visible = false;
             // 
             // label9
@@ -576,27 +639,21 @@
             // 
             // btnPopularProductList
             // 
+            this.btnPopularProductList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnPopularProductList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPopularProductList.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPopularProductList.ForeColor = System.Drawing.Color.White;
             this.btnPopularProductList.Location = new System.Drawing.Point(92, 36);
             this.btnPopularProductList.Name = "btnPopularProductList";
-            this.btnPopularProductList.Size = new System.Drawing.Size(97, 28);
+            this.btnPopularProductList.Size = new System.Drawing.Size(97, 32);
             this.btnPopularProductList.TabIndex = 0;
             this.btnPopularProductList.Text = ">>>";
-            this.btnPopularProductList.UseVisualStyleBackColor = true;
+            this.btnPopularProductList.UseVisualStyleBackColor = false;
             this.btnPopularProductList.Click += new System.EventHandler(this.btnPopularProductList_Click);
-            // 
-            // btnStockSummery
-            // 
-            this.btnStockSummery.Location = new System.Drawing.Point(92, 34);
-            this.btnStockSummery.Name = "btnStockSummery";
-            this.btnStockSummery.Size = new System.Drawing.Size(97, 28);
-            this.btnStockSummery.TabIndex = 2;
-            this.btnStockSummery.Text = ">>>";
-            this.btnStockSummery.UseVisualStyleBackColor = true;
-            this.btnStockSummery.Click += new System.EventHandler(this.btnStockSummery_Click);
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage2.BackColor = System.Drawing.Color.AliceBlue;
             this.tabPage2.Controls.Add(this.gbPurchsaseDate);
             this.tabPage2.Controls.Add(this.gbPurchase);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
@@ -619,12 +676,16 @@
             // 
             // btnPurchaseDatewise
             // 
+            this.btnPurchaseDatewise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnPurchaseDatewise.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPurchaseDatewise.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchaseDatewise.ForeColor = System.Drawing.Color.White;
             this.btnPurchaseDatewise.Location = new System.Drawing.Point(23, 37);
             this.btnPurchaseDatewise.Name = "btnPurchaseDatewise";
-            this.btnPurchaseDatewise.Size = new System.Drawing.Size(84, 28);
+            this.btnPurchaseDatewise.Size = new System.Drawing.Size(84, 34);
             this.btnPurchaseDatewise.TabIndex = 0;
             this.btnPurchaseDatewise.Text = ">>>";
-            this.btnPurchaseDatewise.UseVisualStyleBackColor = true;
+            this.btnPurchaseDatewise.UseVisualStyleBackColor = false;
             this.btnPurchaseDatewise.Click += new System.EventHandler(this.btnPurchaseDatewise_Click);
             // 
             // label7
@@ -668,19 +729,24 @@
             // 
             // btnPurchaseSingle
             // 
+            this.btnPurchaseSingle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnPurchaseSingle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPurchaseSingle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchaseSingle.ForeColor = System.Drawing.Color.White;
             this.btnPurchaseSingle.Location = new System.Drawing.Point(212, 55);
             this.btnPurchaseSingle.Name = "btnPurchaseSingle";
-            this.btnPurchaseSingle.Size = new System.Drawing.Size(97, 28);
+            this.btnPurchaseSingle.Size = new System.Drawing.Size(97, 38);
             this.btnPurchaseSingle.TabIndex = 1;
             this.btnPurchaseSingle.Text = "Report";
-            this.btnPurchaseSingle.UseVisualStyleBackColor = true;
+            this.btnPurchaseSingle.UseVisualStyleBackColor = false;
             this.btnPurchaseSingle.Click += new System.EventHandler(this.btnPurchaseSingle_Click);
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage1.BackColor = System.Drawing.Color.AliceBlue;
             this.tabPage1.Controls.Add(this.gbSaleDate);
             this.tabPage1.Controls.Add(this.gbSale);
+            this.tabPage1.ForeColor = System.Drawing.Color.Black;
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -703,18 +769,22 @@
             // 
             // btnReportDateWise
             // 
-            this.btnReportDateWise.Location = new System.Drawing.Point(15, 32);
+            this.btnReportDateWise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnReportDateWise.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportDateWise.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportDateWise.ForeColor = System.Drawing.Color.White;
+            this.btnReportDateWise.Location = new System.Drawing.Point(15, 23);
             this.btnReportDateWise.Name = "btnReportDateWise";
-            this.btnReportDateWise.Size = new System.Drawing.Size(84, 28);
+            this.btnReportDateWise.Size = new System.Drawing.Size(84, 37);
             this.btnReportDateWise.TabIndex = 0;
             this.btnReportDateWise.Text = ">>>";
-            this.btnReportDateWise.UseVisualStyleBackColor = true;
+            this.btnReportDateWise.UseVisualStyleBackColor = false;
             this.btnReportDateWise.Click += new System.EventHandler(this.btnReportDateWise_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(110, 72);
+            this.label6.Location = new System.Drawing.Point(110, 80);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(151, 16);
             this.label6.TabIndex = 7;
@@ -724,7 +794,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(110, 38);
+            this.label5.Location = new System.Drawing.Point(110, 35);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 16);
             this.label5.TabIndex = 5;
@@ -732,12 +802,16 @@
             // 
             // btnCounter
             // 
-            this.btnCounter.Location = new System.Drawing.Point(15, 66);
+            this.btnCounter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnCounter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCounter.ForeColor = System.Drawing.Color.White;
+            this.btnCounter.Location = new System.Drawing.Point(15, 68);
             this.btnCounter.Name = "btnCounter";
-            this.btnCounter.Size = new System.Drawing.Size(84, 28);
+            this.btnCounter.Size = new System.Drawing.Size(84, 37);
             this.btnCounter.TabIndex = 1;
             this.btnCounter.Text = ">>>";
-            this.btnCounter.UseVisualStyleBackColor = true;
+            this.btnCounter.UseVisualStyleBackColor = false;
             this.btnCounter.Visible = false;
             this.btnCounter.Click += new System.EventHandler(this.btnCounter_Click);
             // 
@@ -774,12 +848,16 @@
             // 
             // btnReportSingle
             // 
+            this.btnReportSingle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnReportSingle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportSingle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportSingle.ForeColor = System.Drawing.Color.White;
             this.btnReportSingle.Location = new System.Drawing.Point(214, 55);
             this.btnReportSingle.Name = "btnReportSingle";
-            this.btnReportSingle.Size = new System.Drawing.Size(97, 28);
+            this.btnReportSingle.Size = new System.Drawing.Size(97, 37);
             this.btnReportSingle.TabIndex = 1;
             this.btnReportSingle.Text = "Report";
-            this.btnReportSingle.UseVisualStyleBackColor = true;
+            this.btnReportSingle.UseVisualStyleBackColor = false;
             this.btnReportSingle.Click += new System.EventHandler(this.btnReportSingle_Click);
             // 
             // tabControl1
@@ -799,7 +877,7 @@
             // 
             // tabPage7
             // 
-            this.tabPage7.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage7.BackColor = System.Drawing.Color.AliceBlue;
             this.tabPage7.Controls.Add(this.gbExpired);
             this.tabPage7.Location = new System.Drawing.Point(4, 25);
             this.tabPage7.Name = "tabPage7";
@@ -824,12 +902,16 @@
             // 
             // btnExpired
             // 
-            this.btnExpired.Location = new System.Drawing.Point(161, 93);
+            this.btnExpired.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnExpired.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExpired.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExpired.ForeColor = System.Drawing.Color.White;
+            this.btnExpired.Location = new System.Drawing.Point(179, 93);
             this.btnExpired.Name = "btnExpired";
-            this.btnExpired.Size = new System.Drawing.Size(95, 26);
+            this.btnExpired.Size = new System.Drawing.Size(95, 35);
             this.btnExpired.TabIndex = 2;
             this.btnExpired.Text = "Report";
-            this.btnExpired.UseVisualStyleBackColor = true;
+            this.btnExpired.UseVisualStyleBackColor = false;
             this.btnExpired.Click += new System.EventHandler(this.btnExpired_Click);
             // 
             // label21
@@ -867,31 +949,21 @@
             this.txtExpiredDays.TabIndex = 1;
             this.txtExpiredDays.Leave += new System.EventHandler(this.txtExpiredDays_Leave);
             // 
-            // gbStock
-            // 
-            this.gbStock.Controls.Add(this.label15);
-            this.gbStock.Controls.Add(this.btnStockSummery);
-            this.gbStock.Location = new System.Drawing.Point(450, 20);
-            this.gbStock.Name = "gbStock";
-            this.gbStock.Size = new System.Drawing.Size(396, 85);
-            this.gbStock.TabIndex = 5;
-            this.gbStock.TabStop = false;
-            this.gbStock.Text = "Stock Summary";
-            // 
             // frmReportAll
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(867, 387);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.Teal;
+            this.ForeColor = System.Drawing.Color.Black;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "frmReportAll";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Date Wise Report";
@@ -911,6 +983,8 @@
             this.gbProfit.ResumeLayout(false);
             this.gbProfit.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            this.gbStock.ResumeLayout(false);
+            this.gbStock.PerformLayout();
             this.gbCategoryWise.ResumeLayout(false);
             this.gbCategoryWise.PerformLayout();
             this.gbSupplierwise.ResumeLayout(false);
@@ -931,8 +1005,6 @@
             this.tabPage7.ResumeLayout(false);
             this.gbExpired.ResumeLayout(false);
             this.gbExpired.PerformLayout();
-            this.gbStock.ResumeLayout(false);
-            this.gbStock.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -65,28 +65,36 @@
             // 
             this.txtBshow.Location = new System.Drawing.Point(170, 19);
             this.txtBshow.Name = "txtBshow";
-            this.txtBshow.Size = new System.Drawing.Size(185, 26);
+            this.txtBshow.Size = new System.Drawing.Size(311, 26);
             this.txtBshow.TabIndex = 5;
             this.txtBshow.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBshow_KeyPress);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(295, 56);
+            this.button3.BackColor = System.Drawing.Color.LightSlateGray;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(330, 51);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 29);
+            this.button3.Size = new System.Drawing.Size(80, 33);
             this.button3.TabIndex = 2;
             this.button3.Text = "Close";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(138, 56);
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(216, 51);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 29);
+            this.button2.Size = new System.Drawing.Size(108, 33);
             this.button2.TabIndex = 1;
             this.button2.Text = "Backup Database";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox1
@@ -98,48 +106,56 @@
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(164, 287);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(497, 130);
+            this.groupBox1.Size = new System.Drawing.Size(497, 120);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Restore DataBase";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(295, 78);
+            this.button1.BackColor = System.Drawing.Color.LightSlateGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(317, 69);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 29);
+            this.button1.Size = new System.Drawing.Size(80, 34);
             this.button1.TabIndex = 2;
             this.button1.Text = "Close";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // BtnRestore
             // 
-            this.BtnRestore.Location = new System.Drawing.Point(198, 78);
+            this.BtnRestore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.BtnRestore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRestore.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRestore.ForeColor = System.Drawing.Color.White;
+            this.BtnRestore.Location = new System.Drawing.Point(216, 69);
             this.BtnRestore.Name = "BtnRestore";
-            this.BtnRestore.Size = new System.Drawing.Size(80, 29);
+            this.BtnRestore.Size = new System.Drawing.Size(95, 34);
             this.BtnRestore.TabIndex = 1;
             this.BtnRestore.Text = "Restore";
-            this.BtnRestore.UseVisualStyleBackColor = true;
+            this.BtnRestore.UseVisualStyleBackColor = false;
             this.BtnRestore.Click += new System.EventHandler(this.BtnRestore_Click);
             // 
             // cmd1
             // 
             this.cmd1.FormattingEnabled = true;
-            this.cmd1.Location = new System.Drawing.Point(202, 36);
+            this.cmd1.Location = new System.Drawing.Point(162, 36);
             this.cmd1.Name = "cmd1";
-            this.cmd1.Size = new System.Drawing.Size(173, 27);
+            this.cmd1.Size = new System.Drawing.Size(329, 27);
             this.cmd1.TabIndex = 0;
             this.cmd1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmd1_KeyPress);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 36);
+            this.label1.Location = new System.Drawing.Point(33, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 19);
+            this.label1.Size = new System.Drawing.Size(123, 19);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Select Backup DataBase:";
+            this.label1.Text = "Select DataBase:";
             // 
             // label2
             // 
@@ -186,7 +202,7 @@
             // FrmDataBase
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(686, 480);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
@@ -195,6 +211,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.KeyPreview = true;
+            this.MaximizeBox = false;
             this.Name = "FrmDataBase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Data Base Backup and Restore";

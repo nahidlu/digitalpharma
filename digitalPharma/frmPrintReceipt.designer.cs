@@ -68,22 +68,28 @@
             // 
             // btnReportSingle
             // 
+            this.btnReportSingle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnReportSingle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportSingle.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportSingle.ForeColor = System.Drawing.Color.White;
             this.btnReportSingle.Location = new System.Drawing.Point(214, 72);
             this.btnReportSingle.Name = "btnReportSingle";
-            this.btnReportSingle.Size = new System.Drawing.Size(97, 28);
+            this.btnReportSingle.Size = new System.Drawing.Size(97, 38);
             this.btnReportSingle.TabIndex = 1;
             this.btnReportSingle.Text = "Report";
-            this.btnReportSingle.UseVisualStyleBackColor = true;
+            this.btnReportSingle.UseVisualStyleBackColor = false;
             this.btnReportSingle.Click += new System.EventHandler(this.btnReportSingle_Click);
             // 
             // frmPrintReceipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(489, 193);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "frmPrintReceipt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Print Receipt";

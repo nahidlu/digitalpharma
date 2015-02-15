@@ -54,7 +54,7 @@ namespace digitalPharma
                         select p.AccountNo).ToList();
                 if (q.Count() > 0)
                 {
-                    AccountNO = q.Last() + 1;
+                    AccountNO = q.Max() + 1;
                 }
                 else
                 {
@@ -496,10 +496,10 @@ namespace digitalPharma
                             select p;
                     if (q.Count() == 0)
                     {
-                        using (TransactionScope Trans = new TransactionScope())
+                        //using (TransactionScope Trans = new TransactionScope())
                         {
-                            try
-                            {
+                            //try
+                            //{
                             tbl_LedgerHead entry = new tbl_LedgerHead();
                             entry.GLID = int.Parse(cmbGL2.SelectedValue.ToString());
                             entry.SubGLID = int.Parse(cmbSubHeadName.SelectedValue.ToString());
@@ -508,15 +508,15 @@ namespace digitalPharma
                             entry.Description = txtDescription.Text.Trim();
 
                             DB.tbl_LedgerHeads.InsertOnSubmit(entry);
-                            DB.SubmitChanges();
-                            Trans.Complete();
+                           DB.SubmitChanges();
+                            //Trans.Complete();
                             check = 1;
-                            }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show(ex.ToString());
-                                check = 0;
-                            }
+                            //}
+                            //catch (Exception ex)
+                            //{
+                            //    MessageBox.Show(ex.ToString());
+                            //    check = 0;
+                            //}
                         }
 
                         if (check > 0)

@@ -108,7 +108,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(245, 650);
             this.ControlBox = false;

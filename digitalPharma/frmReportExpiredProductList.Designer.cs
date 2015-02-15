@@ -53,12 +53,16 @@
             // 
             // btnExpired
             // 
+            this.btnExpired.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(153)))));
+            this.btnExpired.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExpired.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExpired.ForeColor = System.Drawing.Color.White;
             this.btnExpired.Location = new System.Drawing.Point(184, 97);
             this.btnExpired.Name = "btnExpired";
-            this.btnExpired.Size = new System.Drawing.Size(95, 26);
+            this.btnExpired.Size = new System.Drawing.Size(95, 38);
             this.btnExpired.TabIndex = 2;
             this.btnExpired.Text = "Report";
-            this.btnExpired.UseVisualStyleBackColor = true;
+            this.btnExpired.UseVisualStyleBackColor = false;
             this.btnExpired.Click += new System.EventHandler(this.btnExpired_Click);
             // 
             // label21
@@ -100,10 +104,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(426, 202);
             this.Controls.Add(this.groupBox7);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmReportExpiredProductList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Expired Product List";

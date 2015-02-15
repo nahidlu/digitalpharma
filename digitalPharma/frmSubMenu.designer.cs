@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSubMenu));
             this.btnReceipt = new System.Windows.Forms.Button();
             this.btnExpired = new System.Windows.Forms.Button();
+            this.btnPurchase = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnDB = new System.Windows.Forms.Button();
             this.btnCategory = new System.Windows.Forms.Button();
-            this.btnSupplier = new System.Windows.Forms.Button();
-            this.btnPurchase = new System.Windows.Forms.Button();
             this.btnSale = new System.Windows.Forms.Button();
+            this.btnSupplier = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnReceipt
@@ -65,6 +65,19 @@
             this.btnExpired.TabIndex = 4;
             this.btnExpired.UseVisualStyleBackColor = false;
             this.btnExpired.Click += new System.EventHandler(this.btnExpired_Click);
+            // 
+            // btnPurchase
+            // 
+            this.btnPurchase.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnPurchase.BackgroundImage = global::digitalPharma.Properties.Resources.purchase;
+            this.btnPurchase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPurchase.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchase.Location = new System.Drawing.Point(8, 135);
+            this.btnPurchase.Name = "btnPurchase";
+            this.btnPurchase.Size = new System.Drawing.Size(234, 62);
+            this.btnPurchase.TabIndex = 1;
+            this.btnPurchase.UseVisualStyleBackColor = false;
+            this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
             // 
             // btnExit
             // 
@@ -109,33 +122,6 @@
             this.btnCategory.UseVisualStyleBackColor = false;
             this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
             // 
-            // btnSupplier
-            // 
-            this.btnSupplier.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnSupplier.BackgroundImage = global::digitalPharma.Properties.Resources.sup;
-            this.btnSupplier.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSupplier.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSupplier.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSupplier.Location = new System.Drawing.Point(9, 271);
-            this.btnSupplier.Name = "btnSupplier";
-            this.btnSupplier.Size = new System.Drawing.Size(234, 62);
-            this.btnSupplier.TabIndex = 3;
-            this.btnSupplier.UseVisualStyleBackColor = false;
-            this.btnSupplier.Click += new System.EventHandler(this.btnSupplier_Click);
-            // 
-            // btnPurchase
-            // 
-            this.btnPurchase.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnPurchase.BackgroundImage = global::digitalPharma.Properties.Resources.purchase;
-            this.btnPurchase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPurchase.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPurchase.Location = new System.Drawing.Point(8, 135);
-            this.btnPurchase.Name = "btnPurchase";
-            this.btnPurchase.Size = new System.Drawing.Size(234, 62);
-            this.btnPurchase.TabIndex = 1;
-            this.btnPurchase.UseVisualStyleBackColor = false;
-            this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
-            // 
             // btnSale
             // 
             this.btnSale.BackColor = System.Drawing.SystemColors.Highlight;
@@ -150,11 +136,25 @@
             this.btnSale.UseVisualStyleBackColor = false;
             this.btnSale.Click += new System.EventHandler(this.btnSale_Click);
             // 
+            // btnSupplier
+            // 
+            this.btnSupplier.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnSupplier.BackgroundImage = global::digitalPharma.Properties.Resources.sup;
+            this.btnSupplier.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSupplier.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSupplier.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSupplier.Location = new System.Drawing.Point(9, 271);
+            this.btnSupplier.Name = "btnSupplier";
+            this.btnSupplier.Size = new System.Drawing.Size(234, 62);
+            this.btnSupplier.TabIndex = 3;
+            this.btnSupplier.UseVisualStyleBackColor = false;
+            this.btnSupplier.Click += new System.EventHandler(this.btnSupplier_Click);
+            // 
             // frmSubMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(245, 650);
             this.ControlBox = false;
