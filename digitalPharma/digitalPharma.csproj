@@ -119,6 +119,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Barcode.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DAO\ClsEncode.cs" />
     <Compile Include="frmSubMenu1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

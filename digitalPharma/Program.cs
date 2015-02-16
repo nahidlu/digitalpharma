@@ -6,6 +6,8 @@ using System.Windows.Forms;
 using Microsoft.VisualBasic.ApplicationServices;
 using System.Configuration;
 using System.ComponentModel;
+using digitalPharma.DAO;
+using AppSecure;
 
 namespace digitalPharma
 {
@@ -78,8 +80,11 @@ namespace digitalPharma
             catch
             {
 
-            }                             
-            bool logic = scr.Algorithm("6A7FEBF6A50E3F1FBFF", reg_path);
+            }
+            HardwareId hid = new HardwareId();
+            bool logic = scr.Algorithm(ClsEncode.GetEncodedData(hid.getUniqueID("C")), reg_path);
+            //bool logic = scr.Algorithm("NkE3RkVCRjZBNTBFM0YxRkJGRg%3d%3d", reg_path);
+            //bool logic = scr.Algorithm("6A7FEBF6A50E3F1FBFF", reg_path);
             //bool logic = scr.Algorithm("F41FEBFC4E8FD27FBFF", reg_path);//super market
             //bool logic = scr.Algorithm("F34FEBF0C4A984DFBFF", reg_path);
 

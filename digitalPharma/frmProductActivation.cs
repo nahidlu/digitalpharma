@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using Microsoft.Win32;
 using AppSecure;
+using digitalPharma.DAO;
 
 namespace digitalPharma
 {
@@ -34,7 +35,7 @@ namespace digitalPharma
            string hardid = hid.getUniqueID("C");
            // MessageBox.Show(pass);
            // if (hid.getUniqueID("C") == pass)
-           if (originalPass == hardid && hid.getUniqueID("C") == pass)
+           if (originalPass == ClsEncode.GetEncodedData(hardid) && ClsEncode.GetEncodedData(hardid) == pass)
             {
                 RegistryKey regkey = Registry.CurrentUser;
                 regkey = regkey.CreateSubKey(regPath); //path
@@ -51,18 +52,26 @@ namespace digitalPharma
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //if password true then send true			
-            bool value = passwordEntry(getpassword,textBox1.Text);
-            if (value ==true)
+            if (textBox1.Text != "")
             {
-                MessageBox.Show("Thank you for activation!","Activate",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                this.Hide();
-                this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-                this.DialogResult = DialogResult.OK;
+                //if password true then send true			
+                bool value = passwordEntry(getpassword, textBox1.Text);
+                if (value == true)
+                {
+                    MessageBox.Show("Thank you for activation!", "Activate", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
+                    this.DialogResult = DialogResult.OK;
+                }
+                else
+                    MessageBox.Show("Product Key is not valid! Please Enter a valid Product Key! or Contact Arrowsoft", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //----------------------------------------------		
             }
             else
-                MessageBox.Show("Product Key is not valid! Please Enter a valid Product Key! or Contact Arrowsoft","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
-			//----------------------------------------------		
+            {
+                MessageBox.Show("Please Enter Product Key.");
+                textBox1.Focus();
+            }
 		
         }
 
@@ -131,6 +140,13 @@ namespace digitalPharma
         //}
         //---------
         private void Form1_Load(object sender, EventArgs e)
+        {
+            HardwareId hid = new HardwareId();
+            string hardid = hid.getUniqueID("C");
+            textBox2.Text = hardid;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

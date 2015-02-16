@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.Transactions;
 using digitalPharma.DAO;
+using System.Web;
+using AppSecure;
 
 namespace digitalPharma
 {
@@ -287,6 +289,30 @@ namespace digitalPharma
                     MessageBox.Show("Saved Successfully.");
                 }
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            HardwareId hi = new HardwareId();
+            string data = (hi.getUniqueID("C"));
+            string encodedData = String.Empty;
+            try
+            {
+                byte[] data_byte = Encoding.UTF8.GetBytes(data);
+                encodedData = HttpUtility.UrlEncode(Convert.ToBase64String(data_byte));
+            }
+            catch (Exception exception)
+            {
+                //Log exception
+            }
+            //return encodedData;
+            textBox1.Text = encodedData;
+
+        }
+
+        private void frmTransferData_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
