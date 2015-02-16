@@ -1554,13 +1554,28 @@ namespace digitalPharma
                 {
                     e.SuppressKeyPress = true;
                 }
-
             }
         }
 
         private void lblAdTk_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmSale_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                if (MessageBox.Show("Are You Sure To Exit?", "", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    frmSale sale = new frmSale();
+                    sale.Close();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
         }
 
     }

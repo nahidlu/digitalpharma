@@ -1481,6 +1481,22 @@ namespace digitalPharma
         {
 
         }
+
+        private void frmPurchase_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                if (MessageBox.Show("Are You Sure To Exit?", "", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    frmPurchase pur = new frmPurchase();
+                    pur.Close();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+        }
     }
         
 }
