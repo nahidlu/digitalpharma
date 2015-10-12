@@ -149,7 +149,7 @@ namespace digitalPharma
                         ROWInfo[1] = RowNO;
                     }
                 }
-                catch
+                catch   
                 {
 
                 }

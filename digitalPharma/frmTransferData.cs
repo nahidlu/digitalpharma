@@ -11,6 +11,7 @@ using digitalPharma.DAO;
 using System.Web;
 using AppSecure;
 
+
 namespace digitalPharma
 {
     public partial class frmTransferData : Form
@@ -124,7 +125,7 @@ namespace digitalPharma
                     foreach (var Name in q)
                     {
                         tbl_Product entry = new tbl_Product();
-                        count += 1;
+                        //count += 1;
                         entry.BarcodeNeeded = 0;
                         entry.CategoryID = ClsProductCategory.GetProductCategorySingleInfoByName(Name.GenericNameAndStrength).CategoryID;
                        // **********************//Description replace with id******************************

@@ -48,9 +48,6 @@ namespace digitalPharma
         public static double Vat = 0;
         public static string con = ConfigurationManager.ConnectionStrings["PharmacyeDBConnectionString"].ConnectionString;
         public static string BarcodePrintNeededForOldProductID = ConfigurationManager.AppSettings["BarcodePrintNeededForOldProductID"];
-
-
-
     }
     static class Program
     {

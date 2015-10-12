@@ -310,7 +310,6 @@ namespace digitalPharma
                 {
                     e.SuppressKeyPress = true;
                 }
-
             }
         }
     }
