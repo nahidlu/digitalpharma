@@ -5,6 +5,7 @@ Setup MSSQL Server 12,Crystal Report and VS 2010 or 2012 in order to run this ap
 
 * This is a pharmacy automation software
 * Version 1.1
+* @Author harunur rashid and ruhul amin
 
 
 ### How do I get set up? ###
